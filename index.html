@@ -105,6 +105,26 @@
       </div>
     </section>
 
+    <section class="kakao-map">
+      <div class="container">
+        <h2>오시는 길</h2>
+      </div>
+      <div id="map" style="width: 500px; height: 400px"></div>
+      <script
+        type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=604450d7333437c8244b0af60425b510"
+      ></script>
+      <script>
+        var container = document.getElementById('map');
+        var options = {
+          center: new kakao.maps.LatLng(33.450701, 126.570667),
+          level: 3,
+        };
+
+        var map = new kakao.maps.Map(container, options);
+      </script>
+    </section>
+
     <footer>
       <div id="aLine">
         <div id="footer_fline">
