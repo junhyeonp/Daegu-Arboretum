@@ -190,6 +190,10 @@ select {
 }
 
 /* kakao-map */
+section.kakao-map {
+  margin-bottom: 50px;
+}
+
 .kakao-map #map {
   margin: 0 auto;
 }
@@ -250,7 +254,6 @@ footer #bLine {
 footer #bLine #footer_tline {
   width: 100%;
   margin-left: 97px;
-
   display: flex;
   gap: 30px;
   align-items: center;
