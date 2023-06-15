@@ -1,0 +1,111 @@
+/* 프리텐다드 폰트 */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Orbit 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard-Regular';
+}
+
+ul {
+  list-style: none;
+}
+
+/* header */
+header {
+  width: 90%;
+  height: 80px;
+  margin: 20px auto 0;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  max-width: 1280px;
+}
+
+header .menu {
+  display: flex;
+}
+
+header .menu li {
+  margin-left: 35px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-family: 'Orbit';
+  font-size: 1.6rem;
+}
+
+/* hero section */
+section.hero {
+  background: url('../img/hero_img.jpeg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(1, 1, 1, 0.5), transparent);
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 45px;
+  display: block;
+  margin-right: 20px;
+}
+
+.text_box {
+  font-size: 2.5rem;
+  text-align: left;
+  color: #eee;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 40%;
+  transform: translate(-50%);
+  font-family: 'Orbit';
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+  font-size: 2.5rem;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}

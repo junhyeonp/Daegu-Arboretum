@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Orbit 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbit&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/logo.PNG" class="logo-img" alt="" />
+        <h1>대구수목원</h1>
+      </div>
+      <ul class="menu">
+        <li>관람안내</li>
+        <li>전시</li>
+        <li>교육</li>
+        <li>연구</li>
+        <li>알림마당</li>
+        <li>기관소개</li>
+      </ul>
+    </header>
+
+    <section class="hero"></section>
+
+    <div class="overlay"></div>
+
+    <div class="text_box">
+      <span class="text"></span>
+      <span class="blink">|</span>
+    </div>
+
+    <section></section>
+
+    <script>
+      const content = '쓰레기 매립장에서 \n 야생 동•식물 터전으로';
+      const text = document.querySelector('.text');
+      let i = 0;
+
+      function typing(ㄹ) {
+        let txt = content[i++];
+        text.innerHTML += txt === '\n' ? '<br/>' + '\t' : txt;
+        if (i > content.length) {
+          text.textContent = '';
+          i = 0;
+        }
+      }
+      setInterval(typing, 250);
+    </script>
+  </body>
+</html>
