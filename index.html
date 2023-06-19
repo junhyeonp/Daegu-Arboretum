@@ -18,6 +18,12 @@
     />
   </head>
   <body>
+    <!-- top btn -->
+    <a class="top-btn" href="#" style="cursor: pointer">TOP</a>
+
+    <!-- reservation btn -->
+    <a class="reservation-btn" href="">견학/체험 예약</a>
+
     <header>
       <div class="logo">
         <img src="./img/logo.PNG" class="logo-img" alt="" />
@@ -42,6 +48,7 @@
       <span class="blink">|</span>
     </div>
 
+    <!-- guide map -->
     <section class="guide-map">
       <div class="container">
         <div class="section-title-container">
@@ -105,6 +112,84 @@
       </div>
     </section>
 
+    <!-- sns gallery -->
+    <section class="sns-gallery">
+      <div class="container">
+        <div class="section-title-container">
+          <img src="./img/sns_gallery_icon.png" width="40px" alt="" />
+          <h2 class="section-title">공식 인스타그램 둘러보기</h2>
+        </div>
+
+        <div>
+          <div class="instagram-profile">
+            <div class="profile-img-wrapper">
+              <img src="./img/prfile_img.webp" width="150px" alt="" />
+            </div>
+
+            <div class="profile">
+              <h2>daeguarboretum</h2>
+              <p class="account-info">게시물 59 팔로워 1005 팔로우 70</p>
+              <h3>대구 수목원</h3>
+              <p class="operation-info">
+                관람시간: 1-4월, 9월-12월 (9:00 ~ 18:00), 5-월 (9:00 ~ 19:00)
+                <br />
+                월요일은 온실 및 전시관 휴관입니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-container">
+            <div class="grid-item-wrapper">
+              <div class="grid-item">
+                <img src="./img/gallery_1.webp" alt="" />
+              </div>
+            </div>
+            <div class="grid-item-wrapper">
+              <div class="grid-item">
+                <img src="./img/gallery_2.webp" alt="" />
+              </div>
+            </div>
+            <div class="grid-item-wrapper">
+              <div class="grid-item">
+                <img src="./img/gallery_3.webp" alt="" />
+              </div>
+            </div>
+            <div class="grid-item-wrapper">
+              <div class="grid-item">
+                <img src="./img/gallery_4.webp" alt="" />
+              </div>
+            </div>
+            <div class="grid-item-wrapper">
+              <div class="grid-item">
+                <img src="./img/gallery_5.webp" alt="" />
+              </div>
+            </div>
+            <div class="grid-item-wrapper">
+              <div class="grid-item">
+                <img src="./img/gallery_6.webp" alt="" />
+              </div>
+            </div>
+            <div class="grid-item-wrapper">
+              <div class="grid-item">
+                <img src="./img/gallery_7.webp" alt="" />
+              </div>
+            </div>
+            <div class="grid-item-wrapper">
+              <div class="grid-item">
+                <img src="./img/gallery_8.jpg" alt="" />
+              </div>
+            </div>
+            <div class="grid-item-wrapper">
+              <div class="grid-item">
+                <img src="./img/gallery_9.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- kakao map -->
     <section class="kakao-map">
       <div class="container">
         <div class="section-title-container">
@@ -113,7 +198,7 @@
         </div>
         <div
           id="map"
-          style="width: 90%; height: 500px; border-radius: 30px"
+          style="width: 95%; height: 500px; border-radius: 30px"
         ></div>
       </div>
       <script
@@ -253,7 +338,7 @@
 
       const mapInfoTexts = [
         '평평하고 넓은 잎이 달리는 나무의 총칭으로 넓은잎나무라고도 한다. 분류학상으로는 속씨식물의 쌍떡잎식물에 속하며 주로 열대에서부터 온대에 걸쳐서 분포한다. 우리나라에는 상수리나무 굴참나무 신갈나무 떡갈나무 갈참나무 졸참나무를 총칭해서 부르는 참나무류가 대표적인 활엽수라고 할 수 있다. 이 원에는 누리장나무 느티나무 단풍나무 물푸레나무 산벚나무 상수리나무 자작나무 팥배나무 등이 식재되어있다.',
-        '물가에서 잘 자라거나 습기를 좋아하는 식물을 모아 전시한 곳으로, 습지란 물이 흐르다 고이는 오랜 과정을 통하여 다양한 생명체를 키움으로써 완벽한 생산과 소비의 균형을 갖춘 하나의 생태계이다. 이러한 습지는 많은 생명체에게 서식처를 제공하고 또한 습지의 생명체는 생태계가 안정된 수준으로 유지될 수 있도록 하는 역할을 한다. 이 원에는 가래 갈대 물봉선 부들 부레옥잠 세모고랭이 연꽃 창포 등이 식재되어있다.',
+        '<span style="text-decoration:underline">물가에서 잘 자라거나 습기를 좋아하는 식물을 모아 전시한 곳으로</span>, 습지란 물이 흐르다 고이는 오랜 과정을 통하여 다양한 생명체를 키움으로써 완벽한 생산과 소비의 균형을 갖춘 하나의 생태계이다. 이러한 습지는 많은 생명체에게 서식처를 제공하고 또한 습지의 생명체는 생태계가 안정된 수준으로 유지될 수 있도록 하는 역할을 한다. 이 원에는 가래 갈대 물봉선 부들 부레옥잠 세모고랭이 연꽃 창포 등이 식재되어있다.',
         '대구의 약령시를 상징화하고 우리주변에서 흔히 약용으로 사용되는 식물을 전시한 곳으로서, 우리나라의 경우 대부분의 식물들이 효능에 따라 각 부위를 약용으로 이용하고 있다. 외국의 경우 주로 향신료 구황식물 의약품 화장품의 재료로 이용하고 있으며 현대에 와서는 이러한 용도뿐 아니라, 장식용 감상용으로도 이용하고 있다.',
         '우리나라의 유명한 매화나무의 후계목을 수집하여 전시한 곳으로 ‘통도사 자장매’, ‘화엄사 홍매’ 등 25그루의 매화나무가 식재되어 있다.',
         '분재를 주제로 구성된 공간으로 다양한 작품을 감상하면서 독특한 즐거움을 체험할 수 있는 곳이다. 분재란 우거진 숲, 고산절벽을 연상시키는 등 다양한 기교와 창의력을 발휘해 여러 가지 수형을 구성하여 작은 분에 창출한 것으로써, 이를 위해서는 인공적인 재배기술이 필요하고 분재로 가꾸기에 좋은 수종을 선택해야 하며 심미안을 키워야 한다. 이 원에는 단풍나무 매실나무 명자나무 모과나무 산사나무 소나무 소사나무 향나무 등을 소재로 한 작품이 전시되어 있다.',

@@ -116,8 +116,7 @@ section.hero {
 
 /* section.guide-map */
 .guide-map {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 130px 0;
 }
 
 .container {
@@ -186,16 +185,83 @@ select {
 .map-info-title {
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /* kakao-map */
 section.kakao-map {
-  margin-bottom: 50px;
+  padding: 130px;
 }
 
 .kakao-map #map {
   margin: 0 auto;
+}
+
+/* sns gallery */
+.sns-gallery {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 130px;
+}
+
+.instagram-profile {
+  padding: 0 20px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.profile h2 {
+  margin-bottom: 5px;
+}
+
+.profile .account-info {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.profile h3 {
+  margin-bottom: 5px;
+}
+
+.profile .operation-info {
+  color: #555;
+}
+
+.profile-img-wrapper {
+  margin: 20px;
+}
+
+.profile-img-wrapper img {
+  border-radius: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, auto));
+  gap: 5px;
+}
+
+.grid-item-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.grid-item-wrapper::after {
+  display: block;
+  content: '';
+  padding-bottom: 32%;
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  background-color: #999;
+  object-fit: cover;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* footer */
@@ -264,4 +330,31 @@ footer #bLine #footer_foline {
   gap: 30px;
   align-items: center;
   margin-right: 97px;
+}
+
+/* top btn */
+.top-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: #eee;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* reservation-btn */
+.reservation-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  z-index: 9;
+  color: rgba(0, 0, 0, 0.8);
 }
