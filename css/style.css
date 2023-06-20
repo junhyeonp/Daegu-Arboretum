@@ -86,6 +86,10 @@ header .menu li {
   cursor: pointer;
 }
 
+header .menu li a {
+  color: #eee;
+}
+
 header .menu li:hover {
   opacity: 80%;
 }
