@@ -1,0 +1,178 @@
+#reserve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1680px;
+  margin-bottom: 50px;
+}
+#reserve h2 {
+  padding: 100px 0;
+  font-size: 2.5em;
+}
+
+#reserve input {
+  display: none;
+}
+#reserve > label {
+  width: 80vw;
+  padding: 20px 5vw;
+  border-bottom: 1px solid #959292;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+}
+#reserve label.isGreen {
+  border-bottom: 2px solid green;
+}
+#reserve .exersise {
+  display: none;
+}
+#reserve .isBlock {
+  display: block;
+}
+
+#reserve label span {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 0.7em;
+}
+
+/* calendar */
+.exersise .dateHead div {
+  background: #e31b20;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+.exersise .grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+.exersise .grid div {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.exersise .dateBoard div {
+  color: #222;
+  font-weight: bold;
+  min-height: 1.2rem;
+  padding: 0.6rem 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.exersise .noColor {
+  background: #eee;
+}
+.exersise .changeBg {
+  background: #9b9b9b;
+}
+.exersise .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+  /* padding: 1rem 2rem; */
+}
+
+.exersise .btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000;
+  border-width: 3px 3px 0 0;
+  cursor: pointer;
+}
+.exersise .prevDay {
+  transform: rotate(-135deg);
+  position: absolute;
+  left: 0;
+}
+.exersise .nextDay {
+  transform: rotate(45deg);
+  position: absolute;
+  right: 0;
+}
+.exersise .rap {
+  max-width: 300px;
+  padding: 0 0.14rem;
+  margin: 0 auto;
+  margin-top: 1.4rem;
+}
+.exersise .dateHead {
+  margin: 0.4rem 0;
+}
+/* resev */
+.reservation_block {
+  border: 1px solid blue;
+  margin: 20px auto;
+  max-width: 300px;
+}
+.reservation_block h3 {
+  margin: 9px 0 12px 20px;
+}
+.reservation_block h3 span {
+  padding: 4px;
+}
+.reservation_block h3 span:first-child {
+  color: red;
+}
+.reservation_block > button {
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  background-color: rgba(56, 130, 105, 0.32);
+  color: #686b6e;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+}
+.reservation_block button .fa-solid.fa-check {
+  color: green;
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 150px;
+}
+
+.time > button {
+  padding: 12px;
+  border-radius: 5px;
+  background-color: white;
+  margin: 4px auto;
+  border: 1px solid black;
+  text-align: left;
+  width: 90%;
+  display: flex;
+  gap: 4px;
+}
+
+/* 상세설명 */
+.tap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tap li {
+  cursor: pointer;
+}
+.tap li a {
+  color: black;
+}
+.tap_content {
+  display: none;
+  /* max-width: 820px; */
+  border: 1px solid;
+  margin: auto 10%;
+}
