@@ -285,7 +285,7 @@ table {
 
 #table {
   display: none;
-  padding: 30px;
+  padding: 30px 90px;
 }
 
 #table.show {
