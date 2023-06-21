@@ -340,6 +340,7 @@ table tr {
 /* sns gallery */
 .gallery-border {
   border: 1px solid #919072;
+  border-radius: 10px;
 }
 
 .sns-gallery {
