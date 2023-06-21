@@ -157,7 +157,7 @@
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
       //JavaScript 키 : 56d51771a4a9d45bce2747686afe4f96
-      window.Kakao.init('604450d7333437c8244b0af60425b510'); // API Key 입력
+      window.Kakao.init(''); // API Key 입력
 
       function kakaoLogin() {
         // 함수 선언
@@ -182,12 +182,12 @@
     <!-- //네이버 로그인 버튼 노출 영역 -->
     <script type="text/javascript">
       var naver_id_login = new naver_id_login(
-        'H8XhvEJFTER5qxAGDUlp',
-        'http://junhyeonp.github.io/daegu-garden/naver_Login/naver_callback.html'
+        'key 입력',
+        'https://junhyeonp.github.io/Daegu-Arboretum/naver_Login/naver_callback.html'
       );
       var state = naver_id_login.getUniqState();
       naver_id_login.setButton('white', 3, 62);
-      naver_id_login.setDomain('http://junhyeonp.github.io/daegu-garden');
+      naver_id_login.setDomain('https://junhyeonp.github.io/Daegu-Arboretum');
       naver_id_login.setState(state);
       naver_id_login.setPopup();
       naver_id_login.init_naver_id_login();
