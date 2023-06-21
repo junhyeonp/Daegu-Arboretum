@@ -32,7 +32,12 @@
   font-size: 24px;
   cursor: pointer;
   position: relative;
+  transition: all 0.3s;
 }
+#reserve label:hover {
+  border-bottom: 4px solid rgb(0, 128, 0, 0.8);
+}
+
 #reserve label.isGreen {
   border-bottom: 2px solid green;
 }

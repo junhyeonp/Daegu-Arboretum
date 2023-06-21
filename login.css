@@ -30,25 +30,26 @@ form a {
 .form-wrapper {
   max-width: 400px;
   width: 90%;
-  border: 1px solid #ccc;
   margin: 100px auto;
   margin-top: 30px;
   border-radius: 5px;
-  background-color: rgba(144, 238, 144, 0.2);
+  background-color: rgba(49, 102, 18, 0.1);
+  padding: 20px 0 10px;
 }
 
 input {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #aaa;
+  border: none;
   border-radius: 5px;
   margin-bottom: 10px;
+  transition: all 0.2s;
 }
 
 input:focus {
   outline: none;
-  border: 1px dashed lightgreen;
+  border: 1px solid #aaa;
 }
 
 button {
@@ -60,8 +61,10 @@ button {
   border: 0;
   border-radius: 5px;
   font-weight: bold;
-  margin-bottom: 10px;
   cursor: pointer;
+  margin: 0 0 20px;
+  font-size: 1.1rem;
+  transition: all 0.2s;
 }
 
 button:hover {
@@ -76,9 +79,19 @@ hr {
   border: 0;
 }
 
-form span {
-  font-size: 14px;
+.search span:first-child,
+.search span:last-child {
+  font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
+}
+
+form span:nth-child(2)::after {
+  content: '';
+  padding: 0.5px;
+  height: 7px;
+  background-color: #aaa;
+  margin: 0 10px;
 }
 
 form .search {
@@ -93,4 +106,8 @@ button.join {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.sns-login a:hover {
+  opacity: 85%;
 }
