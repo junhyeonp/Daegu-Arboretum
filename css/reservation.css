@@ -1,3 +1,13 @@
+.hero {
+  background: url('../img/sub-hero-img.jpg');
+  height: 75vh;
+}
+
+.overlay {
+  height: 75vh;
+  background: linear-gradient(270deg, rgba(1, 1, 1, 0.4), transparent);
+}
+
 #reserve {
   display: flex;
   flex-direction: column;
