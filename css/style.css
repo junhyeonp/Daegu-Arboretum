@@ -1,14 +1,20 @@
-/* 프리텐다드 폰트 */
+/* 고운돋움 폰트 */
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+  font-family: 'GowunDodum-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff')
     format('woff');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
-/* Orbit 폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+/* 함초롱돋움 폰트 */
+@font-face {
+  font-family: 'HCRDotum';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* reset */
 * {
@@ -18,7 +24,7 @@
 }
 
 body {
-  font-family: 'Pretendard-Regular';
+  font-family: 'GowunDodum-Regular';
 }
 
 ul {
@@ -43,6 +49,7 @@ a {
 
 .gnb a {
   color: #ddd;
+  font-family: 'HCRDotum';
 }
 
 .gnb .login {
@@ -103,7 +110,6 @@ header .menu li:hover {
 }
 
 .logo-title h1 {
-  font-family: 'Orbit';
   font-size: 1.8rem;
   margin-bottom: 2px;
   color: #eee;
@@ -171,7 +177,7 @@ header .menu li:hover {
 
 /* section.guide-map */
 .guide-map {
-  padding: 130px 0;
+  padding: 180px 0;
 }
 
 .container {
@@ -183,16 +189,16 @@ header .menu li:hover {
 .section-title-container {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 103px;
   justify-content: center;
 }
 
 h2.section-title {
-  font-size: 32px;
-  font-family: 'Orbit';
-  color: #005555;
+  font-size: 34px;
+  font-family: 'GowunDodum-Regular';
+  color: #444;
   text-align: center;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .guide-map-container {
@@ -209,7 +215,7 @@ h2.section-title {
 select {
   width: 100%;
   padding: 0.8em 0.5em;
-  font-family: inherit;
+  font-family: 'HCRDotum';
   background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg)
     no-repeat 95% 50%;
   border: 1px solid #999;
@@ -225,6 +231,7 @@ select {
 .map-info {
   display: flex;
   flex-direction: column;
+  font-family: 'HCRDotum';
 }
 
 .map-info-container {
@@ -245,11 +252,12 @@ select {
 
 .map-info-text {
   color: #555;
+  line-height: 1.5;
 }
 
 /* kakao-map */
 section.kakao-map {
-  padding: 100px 0 130px;
+  padding: 180px 0;
 }
 
 .kakao-map #map {
@@ -338,26 +346,23 @@ table tr {
 }
 
 /* sns gallery */
-.gallery-border {
+
+/* .gallery-border {
   border: 1px solid #919072;
-  border-radius: 10px;
   padding: 40px 0 20px;
   margin-top: 50px;
-}
+} */
 
 .sns-gallery {
-  background: rgba(245, 245, 245);
-  padding: 100px 7% 130px;
+  background: #f3f8f2;
+  padding: 180px 6%;
 }
 
 .instagram-profile {
   padding: 0 20px 50px;
   display: flex;
   align-items: center;
-}
-
-.profile h2 {
-  margin-bottom: 5px;
+  font-family: 'HCRDotum';
 }
 
 .profile .account-info {
@@ -365,8 +370,18 @@ table tr {
   margin-bottom: 20px;
 }
 
+.profile .account-info span {
+  margin-right: 20px;
+}
+
 .profile h3 {
   margin-bottom: 5px;
+}
+
+.profile h3 span {
+  font-weight: normal;
+  color: #4e4ebb;
+  margin-left: 10px;
 }
 
 .profile .operation-info {

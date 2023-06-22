@@ -1,16 +1,25 @@
 .hero {
   background: url('../img/sub-hero-img.jpg');
-  height: 75vh;
+  height: 30vh;
 }
 
 .overlay {
-  height: 75vh;
+  height: 30vh;
   background: linear-gradient(270deg, rgba(1, 1, 1, 0.4), transparent);
 }
 
+.section-title-container {
+  padding: 100px 0 30px;
+  margin: 0;
+  transform: translateX(-20px);
+}
+
+.section-title-container img {
+  margin-right: 20px;
+}
+
 h2 {
-  font-size: 40px;
-  margin-top: 100px;
+  font-size: 36px;
   text-align: center;
 }
 
@@ -30,7 +39,7 @@ form a {
 .form-wrapper {
   max-width: 400px;
   width: 90%;
-  margin: 100px auto;
+  margin: 100px auto 160px;
   margin-top: 30px;
   border-radius: 5px;
   background-color: rgba(49, 102, 18, 0.1);

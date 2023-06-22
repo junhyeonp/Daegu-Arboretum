@@ -31,7 +31,7 @@ const mapInfoTitles = [
   '잔디광장(Lawn Plaza)',
   '목재문화체험장(Wood Culture center)',
   '교육관(Education Center)',
-  '29산림문화전시관(Forest Museum)',
+  '산림문화전시관(Forest Museum)',
   '숲길(Path through a Forest)',
   '분경원(Miniature Garden)',
 ];

@@ -1,11 +1,15 @@
 .hero {
   background: url('../img/sub-hero-img.jpg');
-  height: 75vh;
+  height: 70vh;
 }
 
 .overlay {
-  height: 75vh;
+  height: 70vh;
   background: linear-gradient(270deg, rgba(1, 1, 1, 0.4), transparent);
+}
+
+.section-title-container {
+  margin: 0;
 }
 
 #reserve {
@@ -15,11 +19,16 @@
   justify-content: center;
   width: 100%;
   max-width: 1680px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 #reserve h2 {
-  padding: 100px 0;
-  font-size: 2.5em;
+  padding: 150px 0;
+  font-size: 36px;
+  position: relative;
+}
+
+#reserve img {
+  margin-right: 20px;
 }
 
 #reserve input {
