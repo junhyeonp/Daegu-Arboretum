@@ -206,7 +206,7 @@ h2.section-title {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  min-height: 580px;
+  min-height: 600px;
 }
 
 .guide-map-container .guide-map-img {
@@ -238,6 +238,7 @@ select {
 .map-info-container {
   margin-left: 30px;
   width: 30%;
+  padding-left: 10px;
 }
 
 .map-info img {
@@ -255,7 +256,6 @@ select {
 .map-info-text {
   color: #555;
   line-height: 1.5;
-  padding-left: 5px;
 }
 
 /* kakao-map */
