@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>대구수목원</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+    />
+
     <!-- style.css -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- 제이쿼리 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- 폰트어썸 -->
     <link
@@ -30,6 +43,12 @@
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey="
     ></script>
     <script src="./js/kakao-map.js" defer></script>
+
+    <!-- swiper -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="./js/swiper.js" defer></script>
   </head>
   <body>
     <!-- top btn -->
@@ -47,24 +66,81 @@
     </div>
 
     <header>
-      <div class="logo">
-        <a class="home-link" href="#">
-          <img src="./img/logo.PNG" class="logo-img" width="60px" alt="" />
-          <div class="logo-title">
-            <h1>대구수목원</h1>
-            <p>Daegu National Arboretum</p>
+      <div class="header-wrapper">
+        <div class="logo">
+          <a class="home-link" href="#">
+            <img src="./img/logo.PNG" class="logo-img" width="60px" alt="" />
+            <div class="logo-title">
+              <h1>대구수목원</h1>
+              <p>Daegu National Arboretum</p>
+            </div>
+          </a>
+          <ul class="menu">
+            <li>수목원 안내</li>
+            <li>산림문화전시관</li>
+            <li>교육/연구 내용</li>
+            <li>목재문화체험장</li>
+            <li>나무병원</li>
+            <li>양묘화훼</li>
+            <li><a href="./reservation.html">견학/체험</a></li>
+          </ul>
+          <div class="btn"></div>
+          <div onclick="history.back();" class="page_cover"></div>
+
+          <div id="toggle-menu">
+            <ul class="nav">
+              <li>
+                <a>수목원 안내</a>
+                <ul class="sub_mobile">
+                  <li><a href="#">수목원이란?</a></li>
+                  <li><a href="#">공원과의 차이점</a></li>
+                  <li><a href="#">조성목적 및 연혁</a></li>
+                  <li><a href="#">조성과정</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>산림문화전시관</a>
+                <ul class="sub_mobile">
+                  <li><a href="#">개요</a></li>
+                  <li><a href="#">전시실안내</a></li>
+                  <li><a href="#">전시실배치도</a></li>
+                </ul>
+              </li>
+              <li><a href="#">교육/연구내용</a></li>
+              <li>
+                <a>목재문화체험장</a>
+                <ul class="sub_mobile">
+                  <li><a href="#">체험관소개</a></li>
+                  <li><a href="#">체험프로그램 안내</a></li>
+                  <li><a href="#">시설안내</a></li>
+                </ul>
+              </li>
+              <li><a href="#">나무병원</a></li>
+              <li>
+                <a>양묘화훼</a>
+                <ul class="sub_mobile">
+                  <li>
+                    <a>양묘</a>
+                    <ol>
+                      <li><a>생산목적 및 현황</a></li>
+                      <li><a>생산수종</a></li>
+                    </ol>
+                  </li>
+                  <li>
+                    <a>화훼</a>
+                    <ol>
+                      <li><a href="#">생산 목적 및 현황</a></li>
+                      <li><a href="#">계절별 생산수종</a></li>
+                      <li><a href="#">국화전시회</a></li>
+                    </ol>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div onclick="history.back();" class="close"></div>
           </div>
-        </a>
+        </div>
       </div>
-      <ul class="menu">
-        <li>수목원 안내</li>
-        <li>산림문화전시관</li>
-        <li>교육/연구 내용</li>
-        <li>목재문화체험장</li>
-        <li>나무병원</li>
-        <li>양묘화훼</li>
-        <li><a href="./reservation.html">견학/체험</a></li>
-      </ul>
     </header>
 
     <section class="hero">
@@ -88,12 +164,9 @@
       </div>
 
       <div class="guide-map-container">
-        <img
-          class="guide-map-img"
-          style="border-radius: 30px"
-          src="./img/guidemap.jpg"
-          alt=""
-        />
+        <div class="guide-map-img-wrapper">
+          <img class="guide-map-img" src="./img/guidemap.jpg" alt="" />
+        </div>
 
         <div class="map-info-container">
           <select name="" id="map-number" onchange="selectNumber(this.value)">
@@ -134,9 +207,13 @@
           </select>
 
           <div class="map-info">
-            <img src="" alt="" />
-            <h3 class="map-info-title"></h3>
-            <p class="map-info-text"></p>
+            <div class="map-info-img-wrapper">
+              <img src="" alt="" />
+            </div>
+            <div class="map-info-wrapper">
+              <h3 class="map-info-title"></h3>
+              <p class="map-info-text"></p>
+            </div>
           </div>
         </div>
       </div>
@@ -220,6 +297,207 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- review carrousel -->
+    <section class="review">
+      <div class="section-title-container">
+        <img src="./img/leaf_1.png" width="60px" alt="" />
+        <h2 class="section-title">리뷰</h2>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review-img-wrapper">
+              <img src="./img/review-img1.png" alt="" />
+            </div>
+            <div class="review-text">
+              <div class="review-profile">
+                <div class="avatar-container">
+                  <div class="avatar-img-wrapper">
+                    <img src="./img/profile-img1.png" width="80px" alt="" />
+                  </div>
+                  <div class="avatar-info-wrapper">
+                    <p class="avatar-name">김OO</p>
+                    <p class="posting-date">13일 전에</p>
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+              </div>
+              <p class="review-paragraph">
+                수목원 입구 진입할 때 부터 양갈래로 풀과 나무들이 빼곡히 자리
+                하고 있었습니다. 주차공간도 잘 되어 있었고요 무엇보다 볼거리가
+                많았습니다. 대구에 들리신다면 한번 들려보세요.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-img-wrapper">
+              <img src="./img/review-img2.png" alt="" />
+            </div>
+            <div class="review-text">
+              <div class="review-profile">
+                <div class="avatar-container">
+                  <div class="avatar-img-wrapper">
+                    <img src="./img/profile-img2.png" width="80px" alt="" />
+                  </div>
+                  <div class="avatar-info-wrapper">
+                    <p class="avatar-name">이OO</p>
+                    <p class="posting-date">20일 전에</p>
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+              </div>
+              <p class="review-paragraph">
+                입장료가 무료인데도 불구하고 기대 이상으로 관경이 아주
+                아름다웠습니다. 관리도 잘되어 있고 다양한 식물들을 한 번에 볼 수
+                있다는 것이 가장 큰 매리트인 것 같아요. 내년 봄에 다시 오고
+                싶습니다!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-img-wrapper">
+              <img src="./img/review-img3.png" alt="" />
+            </div>
+            <div class="review-text">
+              <div class="review-profile">
+                <div class="avatar-container">
+                  <div class="avatar-img-wrapper">
+                    <img src="./img/profile-img3.png" width="80px" alt="" />
+                  </div>
+                  <div class="avatar-info-wrapper">
+                    <p class="avatar-name">윤OO</p>
+                    <p class="posting-date">25일 전에</p>
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+              </div>
+              <p class="review-paragraph">
+                쓰레기 매립장이였다는게 믿지 않을 만큼 아름다운 수목원이네요.
+                어른들은 당연히 좋아할 것 같고 데이트 장소로도 안성맞춤 입니다.
+                내년엔 어머니가 아니라 여자친구와..함께! 방문할 수 있기를
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-img-wrapper">
+              <img src="./img/review-img4.png" alt="" />
+            </div>
+            <div class="review-text">
+              <div class="review-profile">
+                <div class="avatar-container">
+                  <div class="avatar-img-wrapper">
+                    <img src="./img/profile-img4.png" width="80px" alt="" />
+                  </div>
+                  <div class="avatar-info-wrapper">
+                    <p class="avatar-name">이OO</p>
+                    <p class="posting-date">29일 전에</p>
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+              </div>
+              <p class="review-paragraph">
+                바람쐴 겸 나들이 가기 좋았습니다. 천천히 둘러보기 좋으니 약간의
+                음식과 음료, 물을 꼭 챙겨 가시고 쓰레기는 꼭 챙겨나옵시다.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-img-wrapper">
+              <img src="./img/review-img5.png" alt="" />
+            </div>
+            <div class="review-text">
+              <div class="review-profile">
+                <div class="avatar-container">
+                  <div class="avatar-img-wrapper">
+                    <img src="./img/profile-img5.png" width="80px" alt="" />
+                  </div>
+                  <div class="avatar-info-wrapper">
+                    <p class="avatar-name">박OO</p>
+                    <p class="posting-date">1달 전에</p>
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+              </div>
+              <p class="review-paragraph">
+                이곳은 인위적으로 가꾸어지지 않은 듯 세심하게 가꾸어 지는
+                듯합니다. 또한 당신이 가족과 함께 휴식하시기에 아주 좋은 장소와
+                환경들을 제공해 줄 겁니다.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-img-wrapper">
+              <img src="./img/review-img6.png" alt="" />
+            </div>
+            <div class="review-text">
+              <div class="review-profile">
+                <div class="avatar-container">
+                  <div class="avatar-img-wrapper">
+                    <img src="./img/profile-img6.png" width="80px" alt="" />
+                  </div>
+                  <div class="avatar-info-wrapper">
+                    <p class="avatar-name">정OO</p>
+                    <p class="posting-date">2달 전에</p>
+                  </div>
+                </div>
+                <div class="stars">
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                  <img src="./img/star.png" alt="" />
+                </div>
+              </div>
+              <p class="review-paragraph">
+                대구수목원은 산책도 하고 온실에서 과실, 종교관련식물, 열대식물,
+                난대식물, 분재원 등과 테마별 정원이 꾸며져 있어서 볼거리와
+                즐길거리로 좋아요. 어느덧 봄이 찾아오고 있네요.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-button-play"></div>
+        <div class="swiper-button-pause disabled"></div>
       </div>
     </section>
 
@@ -379,6 +657,28 @@
         console.log(table);
         table.classList.toggle('show');
       };
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $('.btn').click(function () {
+          $('#toggle-menu,.page_cover,html').addClass('open');
+          window.location.hash = '#open';
+        });
+      });
+
+      window.onhashchange = function () {
+        if (location.hash != '#open') {
+          $('#toggle-menu,.page_cover,html').removeClass('open');
+        }
+      };
+
+      $(document).ready(function () {
+        $('#toggle-menu ul.sub_mobile').hide();
+        $('#toggle-menu ul.nav li').click(function () {
+          $('ul', this).slideToggle('fast');
+        });
+      });
     </script>
   </body>
 </html>

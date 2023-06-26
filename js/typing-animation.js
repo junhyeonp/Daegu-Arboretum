@@ -1,4 +1,4 @@
-const content = '쓰레기 매립장에서 \n 야생 동•식물 터전으로';
+const content = '쓰레기 매립장에서 \n 야생 동·식물 터전으로..';
 const text = document.querySelector('.text');
 let i = 0;
 
