@@ -955,4 +955,8 @@ footer #bLine #footer_foline {
     width: 100%;
     padding-left: 0;
   }
+
+  .text_box {
+    font-size: 1.8rem;
+  }
 }

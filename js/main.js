@@ -16,12 +16,14 @@ const exersises = document.querySelectorAll('#reserve .exersise');
 const labels = document.querySelectorAll('#reserve label');
 exersises.forEach((exersise) => {
   exersise.innerHTML = `
+  <div class="header">
+  <div class="btn prevDay"></div>
+  <h2 class="dateTitle"></h2>
+  <div class="btn nextDay"></div>
+</div>
+<div class="reservation-wrapper">
        <div class="rap">
-          <div class="header">
-            <div class="btn prevDay"></div>
-            <h2 class="dateTitle"></h2>
-            <div class="btn nextDay"></div>
-          </div>
+         
           <div class="grid dateHead">
             <div>일</div>
             <div>월</div>
@@ -64,6 +66,7 @@ exersises.forEach((exersise) => {
             </button>
           </div>
           <button>예약확인<i class="fa-solid fa-check"></i></button>
+        </div>
         </div>
 
         <!-- 상세설명 -->
@@ -211,7 +214,7 @@ const todate = new Date().getDate();
 
 const ymt = `${year}년 ${month}월 ${todate}일`;
 const currentDate = document.querySelector('.currentDate');
-const divs = document.querySelectorAll('.dateBoard .color');
+const divs = document.querySelectorAll('.color');
 divs.forEach((div) => {
   div.addEventListener('click', () => {
     divs.forEach((value) => {
