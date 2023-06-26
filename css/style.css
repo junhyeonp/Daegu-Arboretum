@@ -89,6 +89,10 @@ header {
   margin: 0 auto;
 }
 
+.logo-img {
+  width: 60px;
+}
+
 header .menu {
   display: flex;
   /* position: absolute; */
@@ -125,6 +129,7 @@ header .menu li:hover {
 
 .home-link {
   display: flex;
+  align-items: center;
 }
 
 /* toggle-menu */
@@ -958,5 +963,14 @@ footer #bLine #footer_foline {
 
   .text_box {
     font-size: 1.8rem;
+  }
+
+  .logo-img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .logo-title h1 {
+    font-size: 24px;
   }
 }
