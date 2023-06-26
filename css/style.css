@@ -733,25 +733,33 @@ footer {
   align-items: center;
   padding: 15px 0;
   font-size: 0.9rem;
+  /* color: #999; */
+}
+
+.copyright {
   color: #999;
+}
+
+.footer-wrapper {
+  padding: 0 3%;
 }
 
 /* first Line */
 footer #aLine {
   width: 100%;
-  max-width: 1680px;
+  max-width: 1280px;
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
 }
 
 footer #aLine #footer_fline {
-  margin: 0 97px;
+  /* margin: 0 97px; */
 }
 footer #aLine #footer_fline ul {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  /* gap: 30px; */
 }
 footer #aLine #footer_fline ul li:first-child {
   list-style: none;
@@ -759,12 +767,18 @@ footer #aLine #footer_fline ul li:first-child {
 
 footer #aLine #footer_fline ul li a {
   color: #eee;
+  padding: 10px;
 }
 footer #aLine #footer_sline {
-  margin: 0 97px;
+  /* margin: 0 97px; */
   display: flex;
   gap: 30px;
 }
+
+#footer_sline img {
+  display: none;
+}
+
 footer #aLine #footer_sline a {
   color: white;
 }
@@ -779,7 +793,7 @@ footer #bLine {
 
 footer #bLine #footer_tline {
   width: 100%;
-  margin-left: 97px;
+  /* margin-left: 97px; */
   display: flex;
   gap: 30px;
   align-items: center;
@@ -789,7 +803,7 @@ footer #bLine #footer_foline {
   display: flex;
   gap: 30px;
   align-items: center;
-  margin-right: 97px;
+  /* margin-right: 97px; */
 }
 
 /* top btn */
@@ -886,5 +900,59 @@ footer #bLine #footer_foline {
 
   .map-info-wrapper {
     width: 60%;
+  }
+
+  /* footer */
+  .pc {
+    display: none;
+  }
+
+  footer #aLine #footer_fline ul {
+    gap: 0;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer #aLine #footer_fline ul li {
+    margin-bottom: 10px;
+  }
+
+  footer #aLine {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer #bLine {
+    border-top: none;
+    display: inline-block;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  #footer_sline img {
+    display: block;
+  }
+  .copyright {
+    margin: 10px;
+  }
+
+  footer #bLine img {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .map-info {
+    flex-direction: column;
+  }
+
+  .map-info-img-wrapper {
+    width: 45%;
+  }
+
+  .map-info-wrapper {
+    width: 100%;
+    padding-left: 0;
   }
 }
