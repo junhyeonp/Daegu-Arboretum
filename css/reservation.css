@@ -212,3 +212,19 @@
   border: 1px solid;
   margin: auto 10%;
 }
+
+@media (max-width: 860px) {
+  .reservation-wrapper {
+    flex-direction: column;
+  }
+
+  .reservation_block {
+    width: 100%;
+  }
+
+  .exersise .rap {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}

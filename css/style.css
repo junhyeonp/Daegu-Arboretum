@@ -465,7 +465,7 @@ table {
 
 #table {
   display: none;
-  padding: 30px 90px;
+  padding: 30px 7%;
 }
 
 #table.show {
@@ -506,7 +506,7 @@ table tr {
 }
 
 #table .table_3 table tr td:first-child {
-  width: 400px;
+  min-width: 100px;
   text-align: center;
 }
 
@@ -993,6 +993,14 @@ footer #bLine #footer_foline {
 
   .logo-title h1 {
     font-size: 24px;
+  }
+
+  .reservation-wrapper {
+    flex-direction: column;
+  }
+
+  .reservation_block {
+    width: 100%;
   }
 }
 
