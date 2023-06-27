@@ -45,24 +45,81 @@
     </div>
 
     <header>
-      <div class="logo">
-        <a href="./index.html" class="home-link">
-          <img src="./img/logo.PNG" class="logo-img" width="60px" alt="" />
-          <div class="logo-title">
-            <h1>대구수목원</h1>
-            <p>Daegu National Arboretum</p>
+      <div class="header-wrapper">
+        <div class="logo">
+          <a class="home-link" href="#">
+            <img src="./img/logo.PNG" class="logo-img" alt="" />
+            <div class="logo-title">
+              <h1>대구수목원</h1>
+              <p>Daegu National Arboretum</p>
+            </div>
+          </a>
+          <ul class="menu">
+            <li>수목원 안내</li>
+            <li>산림문화전시관</li>
+            <li>교육/연구 내용</li>
+            <li>목재문화체험장</li>
+            <li>나무병원</li>
+            <li>양묘화훼</li>
+            <li><a href="./reservation.html">견학/체험</a></li>
+          </ul>
+          <div class="btn"></div>
+          <div onclick="history.back();" class="page_cover"></div>
+
+          <div id="toggle-menu">
+            <ul class="nav">
+              <li>
+                <a>수목원 안내</a>
+                <ul class="sub_mobile">
+                  <li><a href="#">수목원이란?</a></li>
+                  <li><a href="#">공원과의 차이점</a></li>
+                  <li><a href="#">조성목적 및 연혁</a></li>
+                  <li><a href="#">조성과정</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>산림문화전시관</a>
+                <ul class="sub_mobile">
+                  <li><a href="#">개요</a></li>
+                  <li><a href="#">전시실안내</a></li>
+                  <li><a href="#">전시실배치도</a></li>
+                </ul>
+              </li>
+              <li><a href="#">교육/연구내용</a></li>
+              <li>
+                <a>목재문화체험장</a>
+                <ul class="sub_mobile">
+                  <li><a href="#">체험관소개</a></li>
+                  <li><a href="#">체험프로그램 안내</a></li>
+                  <li><a href="#">시설안내</a></li>
+                </ul>
+              </li>
+              <li><a href="#">나무병원</a></li>
+              <li>
+                <a>양묘화훼</a>
+                <ul class="sub_mobile">
+                  <li>
+                    <a>양묘</a>
+                    <ol>
+                      <li><a>생산목적 및 현황</a></li>
+                      <li><a>생산수종</a></li>
+                    </ol>
+                  </li>
+                  <li>
+                    <a>화훼</a>
+                    <ol>
+                      <li><a href="#">생산 목적 및 현황</a></li>
+                      <li><a href="#">계절별 생산수종</a></li>
+                      <li><a href="#">국화전시회</a></li>
+                    </ol>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div onclick="history.back();" class="close"></div>
           </div>
-        </a>
+        </div>
       </div>
-      <ul class="menu">
-        <li>수목원 안내</li>
-        <li>산림문화전시관</li>
-        <li>교육/연구 내용</li>
-        <li>목재문화체험장</li>
-        <li>나무병원</li>
-        <li>양묘화훼</li>
-        <li>견학/체험</li>
-      </ul>
     </header>
 
     <section class="hero"></section>

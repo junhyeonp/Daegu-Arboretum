@@ -396,12 +396,17 @@ select {
   font-size: 1rem;
   font-weight: bold;
   border-radius: 5px;
+  color: #706c6c;
 }
 
 .map-info {
   display: flex;
   flex-direction: column;
   font-family: 'HCRDotum';
+}
+
+.map-info-wrapper {
+  color: #706c6c;
 }
 
 .map-info-container {
@@ -521,7 +526,7 @@ table tr {
 
 .gallery-border {
   border: 1px solid #919072;
-  padding: 10% 0 2%;
+  padding: 7% 0 2%;
   margin: 50px auto 0;
   max-width: 1340px;
 }
@@ -997,6 +1002,7 @@ footer #bLine #footer_foline {
 
   h2.section-title {
     font-size: 1.6rem;
+    color: #706c6c;
   }
 }
 
