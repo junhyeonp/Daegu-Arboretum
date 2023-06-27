@@ -85,7 +85,7 @@ header {
 
 .header-wrapper {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1680px;
   margin: 0 auto;
 }
 
@@ -353,6 +353,10 @@ html.open {
   justify-content: center;
 }
 
+.section-title-container img {
+  width: 60px;
+}
+
 h2.section-title {
   font-size: 34px;
   font-family: 'GowunDodum-Regular';
@@ -557,7 +561,7 @@ table tr {
 }
 
 .profile h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
