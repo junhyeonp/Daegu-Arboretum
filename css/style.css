@@ -1009,6 +1009,10 @@ footer #bLine #footer_foline {
     font-size: 1.6rem;
     color: #706c6c;
   }
+
+  .section-title-container img {
+    width: 40px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1035,5 +1039,9 @@ footer #bLine #footer_foline {
 
   h2.section-title {
     font-size: 1.4rem;
+  }
+
+  .section-title-container img {
+    width: 30px;
   }
 }
