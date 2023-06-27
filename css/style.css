@@ -875,11 +875,12 @@ footer #bLine #footer_foline {
   position: fixed;
   right: 30px;
   bottom: 110px;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 55px;
+  border-radius: 100px;
+  background-color: rgb(210, 210, 130, 0.55);
   z-index: 9;
-  color: #fff;
+  color: #706c6c;
+  font-size: 24px;
 }
 
 .reservation-btn:hover {
