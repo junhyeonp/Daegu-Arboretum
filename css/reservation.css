@@ -213,6 +213,12 @@
   margin: auto 10%;
 }
 
+@media (max-width: 1080px) {
+  #reserve > label {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 860px) {
   .reservation-wrapper {
     flex-direction: column;
@@ -226,5 +232,11 @@
     margin-right: 0;
     margin-bottom: 30px;
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #reserve > label {
+    font-size: 16px;
   }
 }

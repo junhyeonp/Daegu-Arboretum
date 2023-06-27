@@ -337,7 +337,7 @@ html.open {
 
 /* section.guide-map */
 .guide-map {
-  padding: 180px 4%;
+  padding: 15% 4%;
 }
 
 .container {
@@ -349,7 +349,7 @@ html.open {
 .section-title-container {
   display: flex;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
   justify-content: center;
 }
 
@@ -371,7 +371,7 @@ h2.section-title {
 .guide-map-img-wrapper {
   width: 70%;
   margin-right: 3%;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   overflow: hidden;
   min-height: 517px;
 }
@@ -428,7 +428,7 @@ select {
 
 /* kakao-map */
 section.kakao-map {
-  padding: 180px 0;
+  padding: 15% 0;
   background: #f3f8f2;
 }
 
@@ -465,7 +465,7 @@ table {
 
 #table {
   display: none;
-  padding: 30px 7%;
+  padding: 30px 6%;
 }
 
 #table.show {
@@ -521,14 +521,14 @@ table tr {
 
 .gallery-border {
   border: 1px solid #919072;
-  padding: 100px 0 2%;
+  padding: 10% 0 2%;
   margin: 50px auto 0;
   max-width: 1340px;
 }
 
 .sns-gallery {
   background: #f3f8f2;
-  padding: 180px 6%;
+  padding: 15% 6%;
 }
 
 .instagram-profile {
@@ -896,7 +896,7 @@ footer #bLine #footer_foline {
   .guide-map-img-wrapper {
     width: 90%;
     min-height: 0;
-    margin: 0 auto;
+    margin: 0 auto 10px;
   }
 
   .map-info-container {
@@ -974,7 +974,7 @@ footer #bLine #footer_foline {
   }
 
   .map-info-img-wrapper {
-    width: 45%;
+    width: 50%;
   }
 
   .map-info-wrapper {
@@ -995,12 +995,8 @@ footer #bLine #footer_foline {
     font-size: 24px;
   }
 
-  .reservation-wrapper {
-    flex-direction: column;
-  }
-
-  .reservation_block {
-    width: 100%;
+  h2.section-title {
+    font-size: 1.6rem;
   }
 }
 
@@ -1016,5 +1012,17 @@ footer #bLine #footer_foline {
 
   .profile h3 {
     font-size: 1.2rem;
+  }
+
+  .guide-map-img-wrapper {
+    width: 100%;
+  }
+
+  .map-info-container {
+    width: 100%;
+  }
+
+  h2.section-title {
+    font-size: 1.4rem;
   }
 }
