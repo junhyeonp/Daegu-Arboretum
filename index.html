@@ -40,7 +40,7 @@
     <!-- kakao map -->
     <script
       type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey="
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=604450d7333437c8244b0af60425b510"
     ></script>
     <script src="./js/kakao-map.js" defer></script>
 
@@ -58,11 +58,15 @@
     </div>
 
     <!-- reservation btn -->
-    <a class="reservation-btn" href="./reservation.html">견학/체험 예약</a>
+    <a class="reservation-btn" href="./reservation.html">
+      <img src="./img/reservation-btn.png" alt="" />
+    </a>
 
-    <div class="gnb">
-      <div class="login"><a href="./login.html">로그인</a></div>
-      <div class="eng"><a href="#">ENGLISH</a></div>
+    <div class="header-wrapper">
+      <div class="gnb">
+        <div class="login"><a href="./login.html">로그인</a></div>
+        <div class="eng"><a href="#">ENGLISH</a></div>
+      </div>
     </div>
 
     <header>
@@ -138,6 +142,7 @@
               </li>
             </ul>
             <div onclick="history.back();" class="close"></div>
+            <div class="toggle-title">MENU</div>
           </div>
         </div>
       </div>
@@ -170,40 +175,40 @@
 
         <div class="map-info-container">
           <select name="" id="map-number" onchange="selectNumber(this.value)">
-            <option disabled selected value="null">
+            <!-- <option disabled selected value="null">
               지도 상의 번호를 선택해주세요.
-            </option>
-            <option value="0">1</option>
-            <option value="1">2</option>
-            <option value="2">3</option>
-            <option value="3">4</option>
-            <option value="4">5</option>
-            <option value="5">6</option>
-            <option value="6">7</option>
-            <option value="7">8</option>
-            <option value="8">9</option>
-            <option value="9">10</option>
-            <option value="10">11</option>
-            <option value="11">12</option>
-            <option value="12">13</option>
-            <option value="13">14</option>
-            <option value="14">15</option>
-            <option value="15">16</option>
-            <option value="16">17</option>
-            <option value="17">18</option>
-            <option value="18">19</option>
-            <option value="19">20</option>
-            <option value="20">21</option>
-            <option value="21">22</option>
-            <option value="22">23</option>
-            <option value="23">24</option>
-            <option value="24">25</option>
-            <option value="25">26</option>
-            <option value="26">27</option>
-            <option value="27">28</option>
-            <option value="28">29</option>
-            <option value="29">30</option>
-            <option value="30">31</option>
+            </option> -->
+            <option value="0" selected>1. 활엽수원</option>
+            <option value="1">2. 습지원</option>
+            <option value="2">3. 약용 식물원</option>
+            <option value="3">4. 매화원</option>
+            <option value="4">5. 분재원</option>
+            <option value="5">6. 향토식물원</option>
+            <option value="6">7. 외국식물원</option>
+            <option value="7">8. 기념식수원</option>
+            <option value="8">9. 방향식물원</option>
+            <option value="9">10. 괴석원</option>
+            <option value="10">11. 양치식물원</option>
+            <option value="11">12. 죽림원</option>
+            <option value="12">13. 철쭉원</option>
+            <option value="13">14. 염료식물원</option>
+            <option value="14">15. 유실수원</option>
+            <option value="15">16. 무궁화원</option>
+            <option value="16">17. 시화원</option>
+            <option value="17">18. 시목원</option>
+            <option value="18">19. 화목원</option>
+            <option value="19">20. 야생초화원</option>
+            <option value="20">21. 침엽수원</option>
+            <option value="21">22. 선인장·다육식물원</option>
+            <option value="22">23. 열대과일원</option>
+            <option value="23">24. 종교관련식물원</option>
+            <option value="24">25. 전통정원</option>
+            <option value="25">26. 잔디광장</option>
+            <option value="26">27. 목재문화체험장</option>
+            <option value="27">28. 교육관</option>
+            <option value="28">29. 산림문화전시관</option>
+            <option value="29">30. 숲길</option>
+            <option value="30">31. 분경원</option>
           </select>
 
           <div class="map-info">
@@ -228,26 +233,32 @@
 
       <div class="gallery-border">
         <div class="container">
+          <h3 class="profile-name">daeguarboretum</h3>
           <div class="instagram-profile">
             <div class="profile-img-wrapper">
-              <img src="./img/prfile_img.webp" alt="" />
+              <img src="./img/instagram_profile_img.webp" alt="" />
             </div>
 
             <div class="profile">
-              <h3>daeguarboretum</h3>
               <div class="account-info">
-                <span>게시물 59</span>
-                <span>팔로워 1005</span>
-                <span class="account-info">팔로우 70</span>
+                <p class="account-info-number">59</p>
+                <p>게시물</p>
+              </div>
+              <div class="account-info">
+                <p class="account-info-number">1007</p>
+                <p>팔로워</p>
+              </div>
+              <div class="account-info">
+                <p class="account-info-number">70</p>
+                <p>팔로워</p>
               </div>
             </div>
           </div>
 
           <div class="operation-info">
             <h3>대구 수목원</h3>
-            <div><대구 수목원 공식 인스타그램></div>
             <p>
-              관람시간: 1-4월, 9월-12월 (9:00 ~ 18:00), 5-월 (9:00 ~ 19:00)
+              관람시간: 1-4월, 9월-12월 (9:00 ~ 18:00), 5-8월 (9:00 ~ 19:00)
               <br />
               월요일은 온실 및 전시관 휴관입니다.
             </p>
@@ -256,47 +267,47 @@
           <div class="grid-container">
             <div class="grid-item-wrapper">
               <div class="grid-item">
-                <img src="./img/gallery_1.webp" alt="" />
+                <img src="./img/instagram_picture_1.png" alt="" />
               </div>
             </div>
             <div class="grid-item-wrapper">
               <div class="grid-item">
-                <img src="./img/gallery_2.webp" alt="" />
+                <img src="./img/instagram_picture_2.png" alt="" />
               </div>
             </div>
             <div class="grid-item-wrapper">
               <div class="grid-item">
-                <img src="./img/gallery_3.webp" alt="" />
+                <img src="./img/instagram_picture_3.png" alt="" />
               </div>
             </div>
             <div class="grid-item-wrapper">
               <div class="grid-item">
-                <img src="./img/gallery_4.webp" alt="" />
+                <img src="./img/instagram_picture_4.png" alt="" />
               </div>
             </div>
             <div class="grid-item-wrapper">
               <div class="grid-item">
-                <img src="./img/gallery_5.webp" alt="" />
+                <img src="./img/instagram_picture_5.png" alt="" />
               </div>
             </div>
             <div class="grid-item-wrapper">
               <div class="grid-item">
-                <img src="./img/gallery_6.webp" alt="" />
+                <img src="./img/instagram_picture_6.png" alt="" />
               </div>
             </div>
             <div class="grid-item-wrapper">
               <div class="grid-item">
-                <img src="./img/gallery_7.webp" alt="" />
+                <img src="./img/instagram_picture_7.png" alt="" />
               </div>
             </div>
             <div class="grid-item-wrapper">
               <div class="grid-item">
-                <img src="./img/gallery_8.jpg" alt="" />
+                <img src="./img/instagram_picture_8.png" alt="" />
               </div>
             </div>
             <div class="grid-item-wrapper">
               <div class="grid-item">
-                <img src="./img/gallery_9.jpg" alt="" />
+                <img src="./img/instagram_picture_9.png" alt="" />
               </div>
             </div>
           </div>
@@ -306,9 +317,10 @@
 
     <!-- review carrousel -->
     <section class="review">
-      <div class="section-title-container">
+      <div class="section-title-container review-container">
         <img src="./img/leaf_1.png" alt="" />
-        <h2 class="section-title">리뷰</h2>
+        <h2 class="section-title">대구 수목원 Review</h2>
+        <div class="review-registration-btn">리뷰 등록하기 &#10003;</div>
       </div>
 
       <div class="swiper-container">
@@ -518,17 +530,22 @@
         ></div>
 
         <p class="adress">
-          &#10066; <strong>주소</strong>: 대구광역시 달서구 화암로 342 (대곡동
-          284번지) (우) 42829
+          <img
+            src="./img/leaf_2.png"
+            width="15px"
+            alt=""
+            style="background-color: #f3f8f2"
+          /><strong>주소</strong>: 대구광역시 달서구 화암로 342 (대곡동 284번지)
+          (우) 42829
         </p>
 
         <div class="transport-info-btn" onclick="showTransportInfo()">
-          교통안내 &#10003;
+          교통안내 더보기 &nbsp; &#10003;
         </div>
 
         <div id="table">
           <div class="table_1">
-            <h3>🔹 시내버스</h3>
+            <h3><span>&bull;</span> 시내버스</h3>
             <table border="1">
               <th>정류소</th>
               <th>버스노선</th>
@@ -577,7 +594,7 @@
             </table>
           </div>
           <div class="table_2">
-            <h3>🔹 지하철</h3>
+            <h3><span>&bullet;</span> 지하철</h3>
             <ul>
               <li>1호선 대곡역 3번출구에서 도보로 25분 정도</li>
               <li>
@@ -589,7 +606,7 @@
             </ul>
           </div>
           <div class="table_3">
-            <h3>🔹 승용차</h3>
+            <h3><span>&bullet;</span> 승용차</h3>
             <table border="1">
               <th colspan="3">고속도로로 오실 때</th>
               <tr>

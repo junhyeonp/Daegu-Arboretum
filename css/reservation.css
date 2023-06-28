@@ -1,3 +1,7 @@
+.reservation-btn {
+  display: none;
+}
+
 .hero {
   background: url('../img/sub-hero-img.jpg');
   height: 70vh;

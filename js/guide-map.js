@@ -75,3 +75,5 @@ function selectNumber(number) {
   mapInfoTitle.innerHTML = mapInfoTitles[number];
   mapInfoText.innerHTML = mapInfoTexts[number];
 }
+
+selectNumber(0);
