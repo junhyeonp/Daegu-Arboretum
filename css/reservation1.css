@@ -1,10 +1,5 @@
-/* 함초롱돋움 폰트 */
-@font-face {
-  font-family: 'HCRDotum';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff')
-    format('woff');
-  font-weight: normal;
-  font-style: normal;
+.reser {
+  display: none;
 }
 
 .hero {
@@ -24,9 +19,6 @@
   margin: 0;
   padding: 100px 0 90px;
 }
-.section-title-container h2 {
-  font-size: 55px;
-}
 
 .reservation-wrapper {
   display: flex;
@@ -35,28 +27,18 @@
 }
 
 #reserve {
-  margin: 0 auto;
-  margin-bottom: 200px;
-  max-width: 1680px;
-  width: 100%;
-}
-
-#reserve .line-add {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60vw;
-  margin: 0 auto;
-  border-bottom: 1px solid #959292;
-  transition: all 0.3s;
+  width: 100%;
   max-width: 1680px;
+  margin-bottom: 200px;
 }
-#reserve h2.dateTitle {
-  font-size: 28px;
+#reserve h2 {
+  /* padding: 100px 0; */
+  font-size: 36px;
   position: relative;
-  font-weight: 500;
-  font-family: 'HCRDotum';
 }
 
 #reserve img {
@@ -66,23 +48,23 @@
 #reserve input {
   display: none;
 }
-#reserve label {
-  width: 60vw;
-  padding: 20px;
-  font-size: 28px;
+#reserve > label {
+  width: 80vw;
+  padding: 20px 5vw;
+  border-bottom: 1px solid #959292;
+  font-size: 24px;
   cursor: pointer;
   position: relative;
+  transition: all 0.3s;
+}
+#reserve label:hover {
+  border-bottom: 4px solid rgb(0, 128, 0, 0.8);
 }
 
-#reserve .line-add.isGreen {
-  border-bottom: 3px solid green;
-  width: 80vw;
+#reserve label.isGreen {
+  border-bottom: 2px solid green;
 }
-
 #reserve .exersise {
-  display: none;
-}
-#reserve .explain {
   display: none;
 }
 #reserve .isBlock {
@@ -98,17 +80,11 @@
 }
 
 /* calendar */
-.exersise {
-  margin: 0 auto;
-}
 .exersise .dateHead div {
-  background: #ccc;
-  color: #222;
+  background: #e31b20;
+  color: #fff;
   text-align: center;
   border-radius: 5px;
-  font-weight: 700;
-  font-size: 1.1em;
-  font-family: 'HCRDotum';
 }
 .exersise .grid {
   display: grid;
@@ -128,7 +104,6 @@
   padding: 0.6rem 0.6rem;
   border-radius: 5px;
   border: 1px solid #eee;
-  text-align: center;
 }
 .exersise .noColor {
   background: #eee;
@@ -177,19 +152,16 @@
 }
 /* resev */
 .reservation_block {
-  border: 1px solid #959292;
+  border: 1px solid #008888;
   /* margin: 20px auto; */
   /* max-width: 300px; */
   width: 40%;
-  border-radius: 10px;
 }
 .reservation_block h3 {
-  margin: 14px 0 14px 20px;
+  margin: 9px 0 12px 20px;
 }
 .reservation_block h3 span {
   padding: 4px;
-  font-family: 'HCRDotum';
-  color: #222;
 }
 .reservation_block h3 span:first-child {
   color: red;
@@ -230,102 +202,31 @@
 }
 
 /* 상세설명 */
-.explain {
-  margin: 0 auto;
-  max-width: 1680px;
-  padding: 0 7%;
-}
-.explain .tap {
+.tap {
   display: flex;
-  justify-content: center;
-  font-family: 'HCRDotum';
+  justify-content: space-around;
 }
-.explain .tap li {
+
+.tap li {
   cursor: pointer;
-  width: 100%;
-  border: 1px solid #aaa;
-  border-radius: 5% 5% 0 0;
-  text-align: center;
-  padding: 2%;
-  margin: 2% 0;
-  font-size: 28px;
-  color: #222;
-  position: relative;
 }
-
-.explain .tap li.active {
-  border-bottom: 4px solid green;
+.tap li a {
+  color: black;
 }
-.explain .tap li svg {
-  position: absolute;
-  top: 50%;
-  right: 25%;
-  transform: translateY(-50%);
-  visibility: hidden;
-  width: 40px;
-}
-
-.explain .tap li svg.activeSv {
-  visibility: visible;
-}
-
-/* 내용 */
-.tap_container .tab_content {
+.tap_content {
   display: none;
-  font-family: 'HCRDotum';
-  font-size: 24px;
-  width: 90%;
-  margin: 30px auto;
-}
-.tap_container .tab_content.active {
-  display: block;
+  /* max-width: 820px; */
+  border: 1px solid;
+  margin: auto 10%;
 }
 
-/* 예약현황 확인란 */
-.currentDate {
-  font-family: 'HCRDotum';
-}
-.fa-clock {
-  font-family: 'HCRDotum';
-}
-
-.resev_check {
-  font-family: 'HCRDotum';
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-@media (max-width: 1280px) {
-  #reserve label {
-    font-size: 22px;
-    width: 100%;
-  }
-  #reserve .line-add {
-    width: 60vw;
-  }
-}
 @media (max-width: 1080px) {
-  #reserve .line-add {
-    width: 70vw;
-  }
-
-  #reserve label {
+  #reserve > label {
     font-size: 18px;
-    width: 100%;
-  }
-  .explain .tap li {
-    font-size: 22px;
-  }
-  .explain .tap li svg {
-    width: 30px;
-    right: 5%;
   }
 }
 
-@media (max-width: 870px) {
-  #reserve .section-title-container h2 {
-    font-size: 32px;
-  }
+@media (max-width: 860px) {
   .reservation-wrapper {
     flex-direction: column;
   }
@@ -339,45 +240,10 @@
     margin-bottom: 30px;
     width: 100%;
   }
-  #reserve .line-add {
-    width: 80vw;
-  }
-
-  #reserve label {
-    width: 100%;
-    font-size: 16px;
-  }
-  .explain .tap li {
-    cursor: pointer;
-    font-size: 18px;
-  }
-  .explain .tap li svg {
-    width: 25px;
-    right: 5%;
-  }
 }
 
 @media (max-width: 500px) {
-  #reserve .section-title-container h2 {
-    font-size: 24px;
-  }
-
-  #reserve .line-add {
-    width: 85vw;
-  }
-  #reserve label {
-    font-size: 14px;
-    white-space: nowrap;
-  }
-  #reserve .line-add.isGreen {
-    width: 90vw;
-  }
-  .explain .tap li {
-    cursor: pointer;
-    font-size: 14px;
-  }
-  .explain .tap li svg {
-    width: 20px;
-    right: 5%;
+  #reserve > label {
+    font-size: 16px;
   }
 }
