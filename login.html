@@ -39,19 +39,14 @@
 
   <body>
     <div class="top-btn-wrapper">
-      <img src="./img/logo.PNG" width="60px" alt="" />
-      <a class="top-btn" href="#" style="cursor: pointer"> TOP</a>
+      <img src="./img/top-btn.png" width="90px" alt="" />
+      <a class="top-btn" href="#" style="cursor: pointer">TOP</a>
     </div>
 
     <!-- reservation btn -->
-    <a class="reservation-btn" href="./reservation.html">견학/체험 예약</a>
-
-    <div class="header-wrapper">
-      <div class="gnb">
-        <div class="login"><a href="./login.html">로그인</a></div>
-        <div class="eng">ENGLISH</div>
-      </div>
-    </div>
+    <a class="reservation-btn" href="./reservation.html">
+      <img src="./img/reservation-btn.png" alt="" />
+    </a>
 
     <header>
       <div class="header-wrapper">
@@ -150,7 +145,7 @@
             <a href="javascript:kakaoLogin();"
               ><img
                 src="./img/kakao_login.png"
-                width="100%"
+                width="231.25px"
                 style="text-align: center"
             /></a>
             <!-- 카카오 로그인 API를 사용하기 위한 자바스크립트 소스 불러오기-->
@@ -254,7 +249,7 @@
         'https://junhyeonp.github.io/Daegu-Arboretum/naver_Login/naver_callback.html'
       );
       var state = naver_id_login.getUniqState();
-      naver_id_login.setButton('white', 3, 62);
+      naver_id_login.setButton('white', 3, 50);
       naver_id_login.setDomain('https://junhyeonp.github.io/Daegu-Arboretum');
       naver_id_login.setState(state);
       naver_id_login.setPopup();

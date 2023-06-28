@@ -351,10 +351,10 @@ html.open {
   text-align: left;
   color: rgba(256, 256, 256);
   position: absolute;
-  left: 40%;
+  left: 50%;
   top: 45%;
   transform: translate(-50%);
-  width: 50%;
+  width: 40%;
   font-family: 'HCRDotum';
   z-index: 99;
 }
@@ -972,6 +972,7 @@ footer #bLine #footer_foline {
 /* top btn */
 .top-btn-wrapper {
   position: relative;
+  z-index: 99;
 }
 
 .top-btn-wrapper:hover {
@@ -980,16 +981,17 @@ footer #bLine #footer_foline {
 
 .top-btn {
   position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 55px;
+  height: 52px;
+  border-radius: 45%;
   position: fixed;
-  bottom: 35px;
-  right: 35px;
+  bottom: 49px;
+  right: 47px;
   z-index: 9;
   line-height: 50px;
   text-align: center;
   color: #000;
+  z-index: 99;
 }
 
 .top-btn-wrapper img {
@@ -1010,10 +1012,11 @@ footer #bLine #footer_foline {
   /* color: #000; */
   /* font-size: 24px; */
   /* font-weight: bold; */
+  margin-bottom: 20px;
 }
 
 .reservation-btn img {
-  width: 60px;
+  width: 90px;
 }
 
 .reservation-btn:hover {
