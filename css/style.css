@@ -506,13 +506,13 @@ section.kakao-map {
 
 .transport-info-btn {
   display: inline-block;
-  padding: 10px 20px;
   margin-left: 6%;
   background-color: #fff;
   border-radius: 20px;
   color: #706c6c;
   cursor: pointer;
   border: 1px solid #706c6c;
+  padding: 8px 15px;
 }
 
 .transport-info-btn:hover {
@@ -764,14 +764,17 @@ table tr {
 }
 
 .review-registration-btn {
-  padding: 10px 15px;
+  padding: 8px 15px;
   border-radius: 30px;
   right: 0;
   border: 1px solid #706c6c;
   top: 60px;
   display: inline-block;
   float: right;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  font-family: 'HCRDotum';
+  color: #706c6c;
 }
 
 .review-registration-btn:hover {
@@ -921,6 +924,7 @@ footer {
   font-size: 0.9rem;
   /* color: #999; */
   font-family: 'HCRDotum';
+  min-height: 300px;
 }
 
 .copyright {
@@ -929,6 +933,7 @@ footer {
 
 .footer-wrapper {
   padding: 0 3%;
+  margin-bottom: 30px;
 }
 
 /* first Line */
@@ -994,7 +999,9 @@ footer #bLine {
   max-width: 1680px;
   border-top: 0.5px solid;
   display: flex;
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  /* padding: 40px; */
+  padding-top: 20px;
 }
 
 footer #bLine #footer_tline {
@@ -1105,6 +1112,9 @@ footer #bLine #footer_foline {
 }
 
 @media (max-width: 1080px) {
+  footer #aLine #footer_sline {
+    margin-bottom: 15px;
+  }
   .guide-map {
     padding-top: 7%;
   }
@@ -1180,6 +1190,7 @@ footer #bLine #footer_foline {
   footer #aLine {
     flex-direction: column;
     align-items: center;
+    padding: 0 30px;
   }
 
   footer #bLine {
@@ -1193,11 +1204,16 @@ footer #bLine #footer_foline {
     display: block;
   }
   .copyright {
-    margin: 10px;
+    /* margin: 10px; */
+    margin-top: 5px;
   }
 
   footer #bLine img {
     display: none;
+  }
+
+  .footer-wrapper {
+    margin-bottom: 0;
   }
 }
 
@@ -1316,7 +1332,7 @@ footer #bLine #footer_foline {
 
   .top-btn-wrapper {
     position: absolute;
-    bottom: 270px;
+    bottom: 320px;
   }
   .map-info {
     flex-direction: column;
@@ -1361,20 +1377,20 @@ footer #bLine #footer_foline {
     padding: 40px 0;
   }
 
-  .top-btn-wrapper {
-    bottom: 280px;
-  }
-}
-
-@media (max-width: 506px) {
-  .top-btn-wrapper {
-    bottom: 300px;
+  .review-registration-btn {
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 500px) {
   .guide-map {
     padding-top: 40px;
+  }
+
+  .review-registration-btn {
+    font-size: 0.8rem;
+    padding: 5px 12px;
+    margin-top: 20px;
   }
 
   .account-info {
@@ -1501,23 +1517,5 @@ footer #bLine #footer_foline {
 
   .section-title-container img {
     width: 25px;
-  }
-}
-
-@media (max-width: 479px) {
-  .top-btn-wrapper {
-    bottom: 330px;
-  }
-}
-
-@media (max-width: 457px) {
-  .top-btn-wrapper {
-    bottom: 350px;
-  }
-}
-
-@media (max-width: 328px) {
-  .top-btn-wrapper {
-    bottom: 370px;
   }
 }
