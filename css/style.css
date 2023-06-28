@@ -44,6 +44,14 @@ a {
   color: black;
 }
 
+.text_box_wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
 /* gnb */
 .gnb {
   position: absolute;
@@ -199,7 +207,7 @@ html.open {
   top: 0px;
   /* right: -202px; */
   right: -400px;
-  z-index: 10;
+  z-index: 9999;
   /* border: 1px solid #c9c9c9; */
   background-color: rgb(3, 3, 3, 0.75);
   font-weight: bold;
@@ -351,12 +359,12 @@ html.open {
   text-align: left;
   color: rgba(256, 256, 256);
   position: absolute;
-  left: 50%;
+  left: 55%;
   top: 45%;
   transform: translate(-50%);
   width: 40%;
   font-family: 'HCRDotum';
-  z-index: 99;
+  z-index: 9;
 }
 
 .blink {
@@ -372,7 +380,7 @@ html.open {
 
 /* section.guide-map */
 .guide-map {
-  padding: 8% 4%;
+  padding: 9% 4%;
 }
 
 .container {
@@ -384,7 +392,7 @@ html.open {
 .section-title-container {
   display: flex;
   align-items: center;
-  margin-bottom: 4%;
+  margin-bottom: 5%;
   justify-content: center;
 }
 
@@ -545,7 +553,7 @@ table th {
   border-bottom: 1.5px solid black;
   height: 35px;
   font-weight: bold;
-  font-size: large;
+  font-size: 1.1rem;
 }
 table td {
   height: 35px;
@@ -588,7 +596,7 @@ table tr {
 
 .sns-gallery {
   background: #f3f8f2;
-  padding: 8% 6%;
+  padding: 10% 6%;
 }
 
 .profile {
@@ -601,6 +609,7 @@ table tr {
 .sns-gallery .profile-name {
   padding: 20px;
   font-size: 2rem;
+  font-weight: normal;
 }
 
 .instagram-profile {
@@ -610,19 +619,30 @@ table tr {
   font-family: 'HCRDotum';
 }
 
+.instagram-profile h3 {
+  font-weight: normal;
+}
+
 .account-info-wrapper {
   display: flex;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  justify-content: flex-start;
+}
+
+.account-info-wrapper2 {
+  display: none;
 }
 
 .profile .account-info {
   color: #434343;
   display: flex;
   flex-direction: column;
+  /* text-indent: 10px; */
   text-align: center;
-  margin-right: 30px;
+  padding: 0 15% 20px 0;
   font-size: 1.3rem;
   font-family: 'Nanum Gothic';
+  /* width: 26%; */
 }
 
 .account-info-number {
@@ -671,6 +691,10 @@ table tr {
   /* color: rgb(112, 108, 108, 0.9); */
 }
 
+.operation-info2 {
+  display: none;
+}
+
 .profile-img-wrapper {
   /* margin: 20px; */
   display: flex;
@@ -688,14 +712,14 @@ table tr {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, auto));
+  grid-template-columns: repeat(3, minmax(50px, auto));
   gap: 5px;
-  padding-bottom: 50px;
+  padding-bottom: 10%;
 }
 
 .grid-item-wrapper {
@@ -914,6 +938,16 @@ footer #aLine {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+  align-items: center;
+}
+
+footer p {
+  margin: 0 auto;
+}
+
+.footer-adress {
+  width: 70%;
+  margin: 0 auto;
 }
 
 footer #aLine #footer_fline {
@@ -935,7 +969,16 @@ footer #aLine #footer_fline ul li a {
 footer #aLine #footer_sline {
   /* margin: 0 97px; */
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
+  align-items: center;
+}
+
+footer #aLine #footer_sline a {
+  margin-left: 15px;
+}
+
+footer #aLine #footer_sline span {
+  margin-left: 15px;
 }
 
 #footer_sline img {
@@ -1018,6 +1061,26 @@ footer #bLine #footer_foline {
   margin-bottom: 20px;
 }
 
+.reservation-btn2-wrapper {
+  width: 82%;
+  margin: 0 auto;
+  display: none;
+  border-bottom: 2px solid #ddd;
+  padding-top: 30px;
+  color: #706c6c;
+  font-family: 'HCRDotum';
+}
+
+.reservation-btn2-wrapper:hover {
+  color: #222;
+  border-color: #222;
+}
+
+.reservation-btn2-wrapper h3 {
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
 .reservation-btn img {
   width: 90px;
 }
@@ -1035,9 +1098,17 @@ footer #bLine #footer_foline {
   .btn {
     display: block;
   }
+
+  .gnb {
+    width: 87%;
+  }
 }
 
 @media (max-width: 1080px) {
+  .guide-map {
+    padding-top: 7%;
+  }
+
   .guide-map-container {
     flex-direction: column;
   }
@@ -1135,6 +1206,114 @@ footer #bLine #footer_foline {
     position: relative;
   }
 
+  .profile-sub-name {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+
+  .operation-info2 {
+    display: block;
+    font-size: 0.8rem;
+    padding: 5px 10px 10px;
+  }
+
+  .profile-img-wrapper img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .account-info-wrapper {
+    display: none;
+  }
+
+  .account-info-wrapper2 {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .profile-img-wrapper {
+    align-items: flex-start;
+    margin-right: 0;
+  }
+
+  .operation-info {
+    display: none;
+  }
+
+  .profile .account-info {
+    width: 30%;
+  }
+
+  .profile-img-wrapper {
+    flex-direction: row;
+  }
+
+  .profile-img-wrapper h3 {
+    display: none;
+  }
+
+  .profile-img-wrapper img {
+    align-self: flex-start;
+    margin-right: 30px;
+  }
+
+  .instagram-profile {
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+
+  .sns-gallery .profile-name {
+    font-size: 1.7rem;
+  }
+
+  .reservation-btn2-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sns-gallery {
+    padding-top: 10%;
+  }
+
+  .review {
+    padding-top: 10%;
+  }
+
+  .kakao-map {
+    padding-top: 10%;
+  }
+
+  .adress {
+    padding: 30px 2%;
+  }
+
+  .transport-info-btn {
+    margin-left: 2%;
+  }
+
+  .profile .account-info {
+    font-size: 1rem;
+  }
+
+  .account-info-wrapper {
+    font-size: 0.9rem;
+  }
+
+  .operation-info {
+    font-size: 0.9rem;
+  }
+
+  .account-info-number {
+    font-size: 1.2rem;
+  }
+
+  .account-info {
+    margin-right: 30px;
+    min-width: 50px;
+  }
+
   .top-btn-wrapper {
     position: absolute;
     bottom: 270px;
@@ -1144,18 +1323,20 @@ footer #bLine #footer_foline {
   }
 
   .map-info-img-wrapper {
-    width: 50%;
+    width: 60%;
     bottom: 10px;
     margin: 0 auto;
   }
 
   .map-info-wrapper {
     width: 100%;
-    padding-left: 10px;
+    /* padding-left: 10px; */
   }
 
   .text_box {
     font-size: 1.8rem;
+    width: 70%;
+    left: 65%;
   }
 
   .logo-img {
@@ -1170,15 +1351,127 @@ footer #bLine #footer_foline {
   .reservation-btn {
     display: none;
   }
+
+  #map {
+    width: 100% !important;
+    height: 50vh !important;
+  }
+
+  footer {
+    padding: 40px 0;
+  }
+
+  .top-btn-wrapper {
+    bottom: 280px;
+  }
+}
+
+@media (max-width: 506px) {
+  .top-btn-wrapper {
+    bottom: 300px;
+  }
 }
 
 @media (max-width: 500px) {
+  .guide-map {
+    padding-top: 40px;
+  }
+
+  .account-info {
+    margin-right: 10px;
+  }
+
+  .profile-img-wrapper img {
+    margin-right: 10px;
+  }
+
+  .instagram-profile {
+    justify-content: space-between;
+  }
+
+  .sns-gallery {
+    padding-top: 60px;
+  }
+
+  .sns-gallery .profile-name {
+    font-size: 1.3rem;
+  }
+
+  .account-info-number {
+    font-size: 0.9rem;
+  }
+  .account-info-wrapper2 {
+    font-size: 0.8rem;
+  }
+
+  .review {
+    padding-top: 60px;
+  }
+
+  section.kakao-map {
+    padding-top: 60px;
+  }
+
+  .map-info-img-wrapper {
+    width: 80%;
+  }
+
+  .map-info-text {
+    font-size: 0.9rem;
+  }
+
+  .map-info-title {
+    font-size: 1.1rem;
+  }
+
+  select {
+    font-size: 0.9rem;
+  }
+
+  .reservation-btn2-wrapper h3 {
+    font-size: 1.1rem;
+  }
+
+  .reservation-btn2-wrapper {
+    width: 90%;
+  }
+
+  #table {
+    padding: 30px 0;
+    font-size: 0.9rem;
+  }
+
+  table th {
+    font-size: 1rem;
+  }
+
+  .adress {
+    font-size: 0.9rem;
+  }
+
+  #table h3 {
+    font-size: 1rem;
+  }
+
+  #map {
+    height: 40vh !important;
+  }
+
+  .transport-info-btn {
+    font-size: 0.9rem;
+  }
+
+  .gnb {
+    width: 85%;
+  }
+
   .top-btn-wrapper {
     /* bottom: 360px; */
   }
 
   .text_box {
     font-size: 1.5rem;
+    left: 53%;
   }
 
   .profile-img-wrapper img {
@@ -1208,5 +1501,23 @@ footer #bLine #footer_foline {
 
   .section-title-container img {
     width: 25px;
+  }
+}
+
+@media (max-width: 479px) {
+  .top-btn-wrapper {
+    bottom: 330px;
+  }
+}
+
+@media (max-width: 457px) {
+  .top-btn-wrapper {
+    bottom: 350px;
+  }
+}
+
+@media (max-width: 328px) {
+  .top-btn-wrapper {
+    bottom: 370px;
   }
 }
