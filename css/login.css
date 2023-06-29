@@ -43,7 +43,7 @@ form a {
 
 .form-wrapper {
   max-width: 400px;
-  width: 90%;
+  /* width: 90%; */
   margin: 100px auto 160px;
   margin-top: 30px;
   border-radius: 5px;
@@ -79,6 +79,7 @@ button {
   margin: 0 0 20px;
   font-size: 1.1rem;
   transition: all 0.2s;
+  font-family: 'HCRDotum';
 }
 
 button:hover {
@@ -113,7 +114,7 @@ form .search {
 }
 
 button.join {
-  background-color: #333;
+  background-color: #444;
 }
 
 .sns-login {
@@ -129,4 +130,12 @@ button.join {
 
 #naver_id_login img {
   width: 100%;
+}
+
+.top-btn-wrapper {
+  display: none;
+}
+
+.reservation-btn {
+  display: none;
 }

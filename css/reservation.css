@@ -25,7 +25,8 @@
   padding: 100px 0 90px;
 }
 .section-title-container h2 {
-  font-size: 55px;
+  font-size: 36px;
+  color: #706c6c;
 }
 
 .reservation-wrapper {
@@ -72,6 +73,7 @@
   font-size: 28px;
   cursor: pointer;
   position: relative;
+  color: rgb(112, 108, 108);
 }
 
 #reserve .line-add.isGreen {
@@ -248,8 +250,8 @@
   text-align: center;
   padding: 2%;
   margin: 2% 0;
-  font-size: 28px;
-  color: #222;
+  font-size: 25px;
+  color: rgb(112, 108, 108);
   position: relative;
 }
 
