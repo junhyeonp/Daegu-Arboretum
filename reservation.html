@@ -73,7 +73,7 @@
             <li>양묘화훼</li>
             <li><a href="./reservation.html">견학/체험</a></li>
           </ul>
-          <div class="btn"></div>
+          <div class="toggleBtn"></div>
           <div onclick="history.back();" class="page_cover"></div>
 
           <div id="toggle-menu">
@@ -1995,7 +1995,7 @@
 
     <script>
       $(document).ready(function () {
-        $('.btn').click(function () {
+        $('.toggleBtn').click(function () {
           $('#toggle-menu,.page_cover,html').addClass('open');
           window.location.hash = '#open';
         });
