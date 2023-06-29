@@ -1,8 +1,7 @@
 /* 함초롱돋움 폰트 */
 @font-face {
   font-family: 'HCRDotum';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff')
-    format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,10 +21,11 @@
 
 .section-title-container {
   margin: 0;
-  padding: 100px 0 90px;
+  padding: 100px 0 60px;
 }
+
 .section-title-container h2 {
-  font-size: 36px;
+  font-size: 55px;
   color: #706c6c;
 }
 
@@ -57,6 +57,7 @@
   transition: all 0.3s;
   max-width: 1680px;
 }
+
 #reserve h2.dateTitle {
   font-size: 28px;
   position: relative;
@@ -71,6 +72,7 @@
 #reserve input {
   display: none;
 }
+
 #reserve label {
   width: 60vw;
   padding: 20px;
@@ -79,6 +81,7 @@
   position: relative;
   color: rgb(112, 108, 108);
 }
+
 #reserve .line-add:hover {
   border-bottom: 3px solid green;
 }
@@ -91,9 +94,11 @@
 #reserve .exersise {
   display: none;
 }
+
 #reserve .explain {
   display: none;
 }
+
 #reserve .isBlock {
   display: block;
   width: 90%;
@@ -110,6 +115,7 @@
 .exersise {
   margin: 0 auto;
 }
+
 .exersise .dateHead div {
   background: #ccc;
   color: #222;
@@ -119,11 +125,13 @@
   font-size: 1.1em;
   font-family: 'HCRDotum';
 }
+
 .exersise .grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 5px;
 }
+
 .exersise .grid div {
   padding: 0.6rem;
   font-size: 0.9rem;
@@ -139,12 +147,15 @@
   border: 1px solid #eee;
   text-align: center;
 }
+
 .exersise .noColor {
   background: #eee;
 }
+
 .exersise .changeBg {
   background: #9b9b9b;
 }
+
 .exersise .header {
   display: flex;
   padding: 120px 0 70px;
@@ -163,16 +174,19 @@
   border-width: 3px 3px 0 0;
   cursor: pointer;
 }
+
 .exersise .prevDay {
   transform: rotate(-135deg);
   /* position: absolute; */
   left: 0;
 }
+
 .exersise .nextDay {
   transform: rotate(45deg);
   /* position: absolute; */
   right: 0;
 }
+
 .exersise .rap {
   /* max-width: 300px; */
   padding: 0 0.14rem;
@@ -181,9 +195,11 @@
   width: 60%;
   margin-right: 30px;
 }
+
 .exersise .dateHead {
   margin: 0.4rem 0;
 }
+
 /* resev */
 .reservation_block {
   border: 1px solid #959292;
@@ -192,18 +208,22 @@
   width: 40%;
   border-radius: 10px;
 }
+
 .reservation_block h3 {
   margin: 14px 0 14px 20px;
 }
+
 .reservation_block h3 span {
   padding: 4px;
   font-family: 'HCRDotum';
   color: #222;
 }
+
 .reservation_block h3 span:first-child {
   color: red;
 }
-.reservation_block > button {
+
+.reservation_block>button {
   display: block;
   width: 90%;
   margin: 20px auto;
@@ -213,12 +233,14 @@
   border-radius: 5px;
   padding: 20px;
 }
+
 .reservation_block button .fa-solid.fa-check {
   color: green;
   margin-left: 8px;
   font-size: 18px;
   font-weight: 700;
 }
+
 .time {
   display: flex;
   flex-direction: column;
@@ -226,7 +248,7 @@
   height: 150px;
 }
 
-.time > button {
+.time>button {
   padding: 12px;
   border-radius: 5px;
   background-color: white;
@@ -244,11 +266,13 @@
   max-width: 1680px;
   padding: 0 7%;
 }
+
 .explain .tap {
   display: flex;
   justify-content: center;
   font-family: 'HCRDotum';
 }
+
 .explain .tap li {
   cursor: pointer;
   width: 100%;
@@ -265,6 +289,7 @@
 .explain .tap li.active {
   border-bottom: 4px solid green;
 }
+
 .explain .tap li svg {
   position: absolute;
   top: 50%;
@@ -286,6 +311,7 @@
   width: 90%;
   margin: 30px auto;
 }
+
 .tap_container .tab_content.active {
   display: block;
 }
@@ -294,6 +320,7 @@
 .currentDate {
   font-family: 'HCRDotum';
 }
+
 .fa-clock {
   font-family: 'HCRDotum';
 }
@@ -304,15 +331,18 @@
   font-weight: bold;
   cursor: pointer;
 }
+
 @media (max-width: 1280px) {
   #reserve label {
     font-size: 22px;
     width: 100%;
   }
+
   #reserve .line-add {
     width: 60vw;
   }
 }
+
 @media (max-width: 1080px) {
   #reserve .line-add {
     width: 70vw;
@@ -322,9 +352,11 @@
     font-size: 18px;
     width: 100%;
   }
+
   .explain .tap li {
     font-size: 22px;
   }
+
   .explain .tap li svg {
     width: 30px;
     right: 5%;
@@ -333,8 +365,9 @@
 
 @media (max-width: 870px) {
   #reserve .section-title-container h2 {
-    font-size: 32px;
+    font-size: 36px;
   }
+
   .reservation-wrapper {
     flex-direction: column;
   }
@@ -348,6 +381,7 @@
     margin-bottom: 30px;
     width: 100%;
   }
+
   #reserve .line-add {
     width: 80vw;
   }
@@ -356,10 +390,12 @@
     width: 100%;
     font-size: 16px;
   }
+
   .explain .tap li {
     cursor: pointer;
     font-size: 18px;
   }
+
   .explain .tap li svg {
     width: 25px;
     right: 5%;
@@ -368,23 +404,27 @@
 
 @media (max-width: 500px) {
   #reserve .section-title-container h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   #reserve .line-add {
     width: 85vw;
   }
+
   #reserve label {
     font-size: 14px;
     white-space: nowrap;
   }
+
   #reserve .line-add.isGreen {
     width: 90vw;
   }
+
   .explain .tap li {
     cursor: pointer;
     font-size: 14px;
   }
+
   .explain .tap li svg {
     width: 20px;
     right: 5%;

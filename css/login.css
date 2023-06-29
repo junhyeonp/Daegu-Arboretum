@@ -14,7 +14,6 @@
 .section-title-container {
   padding: 100px 0 30px;
   margin: 0 auto;
-  transform: translateX(-20px);
 }
 
 .section-title-container img {
@@ -22,7 +21,7 @@
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 55px;
   text-align: center;
   color: #706c6c;
 }
@@ -139,3 +138,15 @@ button.join {
 .reservation-btn {
   display: none;
 }
+
+@media (max-width: 1080px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+/* @media (max-width: 500px) {
+  h2 {
+    font-size: 22px;
+  }
+} */

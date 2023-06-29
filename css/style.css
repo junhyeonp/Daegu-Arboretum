@@ -1,8 +1,7 @@
 /* 고운돋움 폰트 */
 @font-face {
   font-family: 'GowunDodum-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff')
-    format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,8 +9,7 @@
 /* 함초롱돋움 폰트 */
 @font-face {
   font-family: 'HCRDotum';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff')
-    format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -199,6 +197,7 @@ html.open {
   padding: 20px 30px;
   font-size: 1.5rem;
 }
+
 #toggle-menu {
   /* width: 160px; */
   /* width: 300px; */
@@ -292,6 +291,7 @@ html.open {
 #toggle-menu ul.nav li .sub_mobile ol li a:hover {
   border-bottom: 1px solid rgba;
 }
+
 #toggle-menu ul.nav li .sub_mobile ol li a {
   font-size: small;
   color: slateblue;
@@ -402,7 +402,7 @@ html.open {
 }
 
 h2.section-title {
-  font-size: 34px;
+  font-size: 55px;
   font-family: 'GowunDodum-Regular';
   color: #706c6c;
   text-align: center;
@@ -434,8 +434,7 @@ select {
   width: 100%;
   padding: 0.8em 0.5em;
   font-family: 'HCRDotum';
-  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg)
-    no-repeat 95% 50%;
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;
   border: 1px solid #999;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -556,9 +555,11 @@ table th {
   font-weight: bold;
   font-size: 1.1rem;
 }
+
 table td {
   height: 35px;
 }
+
 table tr {
   border: none;
 }
@@ -566,9 +567,11 @@ table tr {
 #table .table_1 table tr td:first-child {
   width: 300px;
 }
+
 #table .table_1 table tr td:nth-child(2) {
   width: 600px;
 }
+
 #table .table_1 table tr td:last-child {
   width: 300px;
 }
@@ -581,6 +584,7 @@ table tr {
 #table .table_1 table tr td:first-child {
   text-align: center;
 }
+
 #table .table_1 table tr td:last-child {
   text-align: center;
 }
@@ -970,11 +974,13 @@ footer p {
 footer #aLine #footer_fline {
   /* margin: 0 97px; */
 }
+
 footer #aLine #footer_fline ul {
   display: flex;
   justify-content: space-between;
   /* gap: 30px; */
 }
+
 footer #aLine #footer_fline ul li:first-child {
   list-style: none;
 }
@@ -983,6 +989,7 @@ footer #aLine #footer_fline ul li a {
   color: #eee;
   padding: 10px;
 }
+
 footer #aLine #footer_sline {
   /* margin: 0 97px; */
   display: flex;
@@ -1005,6 +1012,7 @@ footer #aLine #footer_sline span {
 footer #aLine #footer_sline a {
   color: white;
 }
+
 /* second Line */
 footer #bLine {
   width: 100%;
@@ -1134,6 +1142,7 @@ footer #bLine #footer_foline {
   footer #aLine #footer_sline {
     margin-bottom: 15px;
   }
+
   .guide-map {
     padding-top: 7%;
   }
@@ -1150,10 +1159,6 @@ footer #bLine #footer_foline {
 
   .map-info img {
     margin-bottom: 10px;
-  }
-
-  h2.section-title {
-    font-size: 1.6rem;
   }
 
   .map-info-container {
@@ -1222,6 +1227,7 @@ footer #bLine #footer_foline {
   #footer_sline img {
     display: block;
   }
+
   .copyright {
     /* margin: 10px; */
     margin-top: 5px;
@@ -1234,12 +1240,18 @@ footer #bLine #footer_foline {
   .footer-wrapper {
     margin-bottom: 0;
   }
+
+  h2.section-title {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 860px) {
   body {
     position: relative;
   }
+
+
 
   .top-btn-wrapper {
     width: 55px;
@@ -1427,12 +1439,20 @@ footer #bLine #footer_foline {
   .review-registration-btn {
     margin-bottom: 10px;
   }
+
+  h2.section-title {
+    font-size: 22px;
+  }
+
+
 }
 
 @media (max-width: 500px) {
   .guide-map {
     padding-top: 40px;
   }
+
+
 
   .review-registration-btn {
     font-size: 0.8rem;
@@ -1463,6 +1483,7 @@ footer #bLine #footer_foline {
   .account-info-number {
     font-size: 0.9rem;
   }
+
   .account-info-wrapper2 {
     font-size: 0.8rem;
   }
