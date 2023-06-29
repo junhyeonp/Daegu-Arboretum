@@ -35,6 +35,10 @@
   padding: 0 7%;
 }
 
+.reservation-btn {
+  display: none;
+}
+
 #reserve {
   margin: 0 auto;
   margin-bottom: 200px;
