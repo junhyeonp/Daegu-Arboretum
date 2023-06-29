@@ -36,13 +36,8 @@ form {
   font-family: 'HCRDotum';
 }
 
-form a {
-  /* width: 90%; */
-}
-
 .form-wrapper {
   max-width: 400px;
-  /* width: 90%; */
   margin: 100px auto 160px;
   margin-top: 30px;
   border-radius: 5px;
@@ -144,9 +139,3 @@ button.join {
     font-size: 36px;
   }
 }
-
-/* @media (max-width: 500px) {
-  h2 {
-    font-size: 22px;
-  }
-} */

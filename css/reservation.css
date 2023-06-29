@@ -1,7 +1,8 @@
 /* 함초롱돋움 폰트 */
 @font-face {
   font-family: 'HCRDotum';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -163,7 +164,6 @@
   align-items: center;
   gap: 50px;
   position: relative;
-  /* padding: 1rem 2rem; */
 }
 
 .exersise .btn {
@@ -177,21 +177,16 @@
 
 .exersise .prevDay {
   transform: rotate(-135deg);
-  /* position: absolute; */
   left: 0;
 }
 
 .exersise .nextDay {
   transform: rotate(45deg);
-  /* position: absolute; */
   right: 0;
 }
 
 .exersise .rap {
-  /* max-width: 300px; */
   padding: 0 0.14rem;
-  /* margin: 0 auto; */
-  /* margin-top: 1.4rem; */
   width: 60%;
   margin-right: 30px;
 }
@@ -200,11 +195,9 @@
   margin: 0.4rem 0;
 }
 
-/* resev */
+/* reseve */
 .reservation_block {
   border: 1px solid #959292;
-  /* margin: 20px auto; */
-  /* max-width: 300px; */
   width: 40%;
   border-radius: 10px;
 }
@@ -223,7 +216,7 @@
   color: red;
 }
 
-.reservation_block>button {
+.reservation_block > button {
   display: block;
   width: 90%;
   margin: 20px auto;
@@ -248,7 +241,7 @@
   height: 150px;
 }
 
-.time>button {
+.time > button {
   padding: 12px;
   border-radius: 5px;
   background-color: white;

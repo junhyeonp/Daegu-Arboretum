@@ -1,7 +1,8 @@
 /* 고운돋움 폰트 */
 @font-face {
   font-family: 'GowunDodum-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +10,8 @@
 /* 함초롱돋움 폰트 */
 @font-face {
   font-family: 'HCRDotum';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HCRDotum.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -112,8 +114,6 @@ header {
 
 header .menu {
   display: flex;
-  /* position: absolute; */
-  /* bottom: 20px; */
   transform: translateY(20px);
   right: 5%;
 }
@@ -166,7 +166,6 @@ html.open {
   display: none;
   width: 50px;
   height: 50px;
-  /* position: absolute; */
   right: 0px;
   top: 0px;
   z-index: 1;
@@ -199,15 +198,11 @@ html.open {
 }
 
 #toggle-menu {
-  /* width: 160px; */
-  /* width: 300px; */
   height: 100%;
   position: fixed;
   top: 0px;
-  /* right: -202px; */
   right: -400px;
   z-index: 9999;
-  /* border: 1px solid #c9c9c9; */
   background-color: rgb(3, 3, 3, 0.75);
   font-weight: bold;
   transition: All 0.2s ease;
@@ -259,7 +254,6 @@ html.open {
   float: right;
   width: 100%;
   list-style-type: none;
-  /* font-size: 18px; */
 }
 
 #toggle-menu ul.nav li a {
@@ -267,7 +261,6 @@ html.open {
   width: 100%;
   height: 100%;
   line-height: 50px;
-  /* text-indent: 20px; */
   padding: 0 15px;
   text-align: left;
   color: #fff;
@@ -292,30 +285,20 @@ html.open {
   border-bottom: 1px solid rgba;
 }
 
-#toggle-menu ul.nav li .sub_mobile ol li a {
-  font-size: small;
-  color: slateblue;
-}
-
 #toggle-menu ul.nav li .sub_mobile a {
   font-size: medium;
   position: relative;
-  /* float: left; */
   display: block;
   width: 100%;
   z-index: 999;
   color: #fff;
   border-bottom: none;
-  /* padding-left: 20px; */
   list-style-type: disc;
   padding: 0;
 }
 
 #toggle-menu ul.nav li .sub_mobile a:hover {
-  /* background: darkgreen; */
-  /* color: #fff; */
   z-index: 999;
-  /* border-bottom: 1px solid #aaa; */
   background: none;
   font-size: 1.15rem;
 }
@@ -419,7 +402,6 @@ h2.section-title {
 .guide-map-img-wrapper {
   width: 70%;
   margin-right: 3%;
-  /* border-radius: 30px; */
   overflow: hidden;
   min-height: 530px;
 }
@@ -434,7 +416,8 @@ select {
   width: 100%;
   padding: 0.8em 0.5em;
   font-family: 'HCRDotum';
-  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg)
+    no-repeat 95% 50%;
   border: 1px solid #999;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -612,7 +595,6 @@ table tr {
 }
 
 .sns-gallery .profile-name {
-  /* padding: 20px; */
   margin: 30px 0;
   font-size: 2rem;
   font-weight: normal;
@@ -632,8 +614,6 @@ table tr {
 
 .account-info-wrapper {
   display: flex;
-  /* margin-bottom: 20px; */
-  /* justify-content: space-between; */
   gap: 30px;
 }
 
@@ -645,12 +625,10 @@ table tr {
   color: #434343;
   display: flex;
   flex-direction: column;
-  /* text-indent: 10px; */
   text-align: center;
   padding: 0 15% 20px 0;
   font-size: 1.3rem;
   font-family: 'Nanum Gothic';
-  /* width: 26%; */
   font-size: 1.5rem;
 }
 
@@ -658,15 +636,6 @@ table tr {
   font-size: 1.5rem;
   margin-bottom: 5px;
   font-weight: bold;
-}
-
-/* 
-.profile .account-info span {
-  margin-right: 20px;
-} */
-
-.profile {
-  /* padding: 0 4%; */
 }
 
 .profile h3 {
@@ -683,7 +652,6 @@ table tr {
 .operation-info {
   color: rgb(112, 108, 108);
   margin-bottom: 20px;
-  /* padding: 0 20px 10px; */
   font-family: 'HCRDotum';
   font-weight: bold;
   line-height: 1.7;
@@ -696,24 +664,17 @@ table tr {
   font-size: 1.3rem;
 }
 
-.operation-info p {
-  /* color: rgb(112, 108, 108, 0.9); */
-}
-
 .operation-info2 {
   display: none;
 }
 
 .profile-img-wrapper {
-  /* margin: 20px; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-right: 8%; */
 }
 
 .profile {
-  /* width: 45%; */
   display: flex;
 }
 
@@ -734,12 +695,6 @@ table tr {
 .grid-item-wrapper {
   width: 100%;
   position: relative;
-}
-
-.grid-item-wrapper::after {
-  /* display: block;
-  content: '';
-  padding-bottom: -100%; */
 }
 
 .grid-item {
@@ -774,7 +729,6 @@ table tr {
 
 .review-registration-btn {
   text-align: right;
-  /* padding: 0 3%; */
 }
 
 .review-registration-btn button {
@@ -784,12 +738,9 @@ table tr {
   border: 1px solid #706c6c;
   top: 170px;
   display: inline-block;
-  /* float: right; */
   margin-bottom: 20px;
   font-family: 'HCRDotum';
   color: #706c6c;
-  /* position: absolute; */
-  /* margin-left: 30%; */
   background-color: #fff;
 }
 
@@ -815,7 +766,6 @@ table tr {
   width: 100%;
   height: 100%;
   padding-bottom: 30px;
-  /* max-width: 1280px; */
 }
 
 .swiper-slide {
@@ -900,7 +850,6 @@ table tr {
 
 .avatar-container {
   display: flex;
-  /* margin: 0 25px 25px 0; */
   margin-bottom: 25px 10px;
   align-items: center;
   font-family: 'HCRDotum';
@@ -923,10 +872,6 @@ table tr {
   width: 15px;
 }
 
-/* .stars {
-  padding-bottom: 40px;
-} */
-
 /* footer */
 footer {
   width: 100%;
@@ -938,7 +883,6 @@ footer {
   align-items: center;
   padding: 30px 0;
   font-size: 0.9rem;
-  /* color: #999; */
   font-family: 'HCRDotum';
   min-height: 300px;
 }
@@ -971,14 +915,9 @@ footer p {
   margin: 0 auto;
 }
 
-footer #aLine #footer_fline {
-  /* margin: 0 97px; */
-}
-
 footer #aLine #footer_fline ul {
   display: flex;
   justify-content: space-between;
-  /* gap: 30px; */
 }
 
 footer #aLine #footer_fline ul li:first-child {
@@ -991,9 +930,7 @@ footer #aLine #footer_fline ul li a {
 }
 
 footer #aLine #footer_sline {
-  /* margin: 0 97px; */
   display: flex;
-  /* gap: 30px; */
   align-items: center;
 }
 
@@ -1019,14 +956,11 @@ footer #bLine {
   max-width: 1680px;
   border-top: 0.5px solid;
   display: flex;
-  /* padding: 20px 0; */
-  /* padding: 40px; */
   padding-top: 20px;
 }
 
 footer #bLine #footer_tline {
   width: 100%;
-  /* margin-left: 97px; */
   display: flex;
   gap: 30px;
   align-items: center;
@@ -1036,7 +970,6 @@ footer #bLine #footer_foline {
   display: flex;
   gap: 30px;
   align-items: center;
-  /* margin-right: 97px; */
 }
 
 /* top btn */
@@ -1062,22 +995,11 @@ footer #bLine #footer_foline {
 
 .top-btn {
   position: absolute;
-  /* width: 55px; */
-  /* height: 52px; */
-  /* border-radius: 45%; */
-  /* z-index: 9; */
   line-height: 90px;
   text-align: center;
   color: #666;
   z-index: 99;
   right: 30px;
-  /* top: 15px; */
-}
-
-.top-btn-wrapper img {
-  /* position: fixed;
-  bottom: 30px;
-  right: 30px; */
 }
 
 /* reservation-btn */
@@ -1085,13 +1007,7 @@ footer #bLine #footer_foline {
   position: fixed;
   right: 30px;
   bottom: 110px;
-  /* padding: 15px 55px; */
-  /* border-radius: 100px; */
-  /* background-color: rgb(210, 210, 130, 0.55); */
   z-index: 9;
-  /* color: #000; */
-  /* font-size: 24px; */
-  /* font-weight: bold; */
   margin-bottom: 20px;
 }
 
@@ -1229,7 +1145,6 @@ footer #bLine #footer_foline {
   }
 
   .copyright {
-    /* margin: 10px; */
     margin-top: 5px;
   }
 
@@ -1250,8 +1165,6 @@ footer #bLine #footer_foline {
   body {
     position: relative;
   }
-
-
 
   .top-btn-wrapper {
     width: 55px;
@@ -1296,7 +1209,6 @@ footer #bLine #footer_foline {
     align-items: flex-start;
     text-align: center;
     margin-top: 15px;
-    /* width: 70%; */
     width: 80%;
   }
 
@@ -1385,7 +1297,6 @@ footer #bLine #footer_foline {
   .account-info {
     margin-right: 30px;
     min-width: 50px;
-    /* font-size: 1.3rem; */
   }
 
   .top-btn-wrapper {
@@ -1405,7 +1316,6 @@ footer #bLine #footer_foline {
 
   .map-info-wrapper {
     width: 100%;
-    /* padding-left: 10px; */
   }
 
   .text_box {
@@ -1443,16 +1353,12 @@ footer #bLine #footer_foline {
   h2.section-title {
     font-size: 22px;
   }
-
-
 }
 
 @media (max-width: 500px) {
   .guide-map {
     padding-top: 40px;
   }
-
-
 
   .review-registration-btn {
     font-size: 0.8rem;
@@ -1547,10 +1453,6 @@ footer #bLine #footer_foline {
 
   .gnb {
     width: 85%;
-  }
-
-  .top-btn-wrapper {
-    /* bottom: 360px; */
   }
 
   .text_box {
