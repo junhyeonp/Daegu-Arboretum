@@ -1033,6 +1033,9 @@ footer #bLine #footer_foline {
   opacity: 80%;
 }
 
+.top-btn-wrapper img {
+  width: 90px;
+}
 .top-btn {
   position: absolute;
   /* width: 55px; */
@@ -1334,6 +1337,7 @@ footer #bLine #footer_foline {
     position: absolute;
     bottom: 320px;
   }
+
   .map-info {
     flex-direction: column;
   }
